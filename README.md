@@ -26,8 +26,8 @@
 <i class="fa fa-github" aria-hidden="true"></i>
 
 ## Reference 
-- [**Watson Developer Cloud** *(Github)*](https://github.com/wkddnjset/python-sdk)
-- [**Django blog tutorial** *(Youtube)*](https://www.youtube.com/watch?v=XMu0T6L2KRQ&list=PLEsfXFp6DpzTOcOVdZF-th7BS_GYGguAS)
-- [**Django tutorial** *(Youtube)*](https://www.youtube.com/watch?v=yDv5FIAeyoY&list=PLEsfXFp6DpzRHiyW04co1y-CjDM1Y1sIS)
-- [**OCR Open Source Python** *(Pytessetact)*](https://pypi.python.org/pypi/pytesseract)
+- [**Watson Developer Cloud**](https://github.com/wkddnjset/python-sdk) *(Github)*
+- [**Django blog tutorial**](https://www.youtube.com/watch?v=XMu0T6L2KRQ&list=PLEsfXFp6DpzTOcOVdZF-th7BS_GYGguAS) *(Youtube)*
+- [**Django tutorial**](https://www.youtube.com/watch?v=yDv5FIAeyoY&list=PLEsfXFp6DpzRHiyW04co1y-CjDM1Y1sIS) *(Youtube)*
+- [**OCR Open Source Python**](https://pypi.python.org/pypi/pytesseract) *(Pytessetact)*
 
