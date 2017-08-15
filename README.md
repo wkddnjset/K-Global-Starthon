@@ -23,7 +23,9 @@
 
 #### Raspberry PI 3
 
-<i class="fa fa-github" aria-hidden="true"></i>
+#### Aibril (Watson API in Korean) -- *[To Website](www.aibril.com)*
+    id : aibriltest028@yopmail.com
+    password : aibril12#$
 
 ## Reference 
 - [**Watson Developer Cloud**](https://github.com/wkddnjset/python-sdk) *(Github)*
