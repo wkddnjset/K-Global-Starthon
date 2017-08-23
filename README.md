@@ -23,7 +23,7 @@
 
 #### Raspberry PI 3
 
-#### Aibril API (Watson API in Korean) -- *[To Website](www.aibril.com)*
+#### Aibril API (Watson API in Korean) -- *[To Website](https://www.aibril.com/web/main/getMain.do)*
     id : aibriltest028@yopmail.com
     password : aibril12#$
 
