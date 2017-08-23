@@ -26,6 +26,14 @@
 #### Aibril API (Watson API in Korean) -- *[To Website](https://www.aibril.com/web/main/getMain.do)*
     id : aibriltest028@yopmail.com
     password : aibril12#$
+##### Translator Service key
+    url : https://gateway.aibril-watson.kr/language-translator/api
+    username : 1e32bd76-f647-4467-bbf8-06523e9fb06b
+    password : KKXchvFPAOaJ
+##### Document Coversion Service key
+    url : https://gateway.aibril-watson.kr/document-conversion/api
+    username : 61d34a43-4105-42a0-9ec8-01774c3ce1a6
+    password : ydCaaRag3Um5 
 
 ## Reference 
 - [**Watson Developer Cloud**](https://github.com/wkddnjset/python-sdk) *(Github)*
