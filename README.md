@@ -16,7 +16,7 @@
   - Backend *(Django Framework)*
   
 ## Requirement
-#### Python 3.5
+#### Python 2.7
     numpy, matplotlib, django, watson developer cloud, pytesseract, pillow
  
 #### Django 1.10
