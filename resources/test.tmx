@@ -12,5 +12,13 @@
         <seg>가중치</seg>
       </tuv>
     </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>seo jang won</seg>
+      </tuv>
+      <tuv xml:lang="ko">
+        <seg>서장원</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

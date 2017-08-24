@@ -1,4 +1,4 @@
-#!c:\장언\프로젝트\k-global project\scripts\python.exe
+#!c:\jangwon\project\k-glob~2\scripts\python.exe
 
 # $Id: rst2odt_prepstyles.py 5839 2009-01-07 19:09:28Z dkuhlman $
 # Author: Dave Kuhlman <dkuhlman@rexx.com>

@@ -4,104 +4,112 @@ from os.path import join, dirname
 from io import open
 from watson_developer_cloud import DocumentConversionV1
 
+'''
+{
+"url" : "https://gateway.aibril-watson.kr/document-conversion/api",
+"username" : "61d34a43-4105-42a0-9ec8-01774c3ce1a6",
+"password" : "ydCaaRag3Um5" 
+}
+'''
 document_conversion = DocumentConversionV1(
-    username='YOUR SERVICE USERNAME',
-    password='YOUR SERVICE PASSWORD',
+    username='61d34a43-4105-42a0-9ec8-01774c3ce1a6',
+    password='ydCaaRag3Um5',
     version='2016-02-09')
 
 # Example of retrieving html or plain text
-with open(join(dirname(__file__), '../resources/example.html'),
-          encoding='utf8') as document:
-    config = {'conversion_target': DocumentConversionV1.NORMALIZED_HTML}
-    print(document_conversion.convert_document(
-        document=document, config=config, media_type='text/html').content)
+# with open(join(dirname(__file__), '../resources/thesis/sample.pdf'),
+#           encoding='ascii') as document:
+#     config = {'conversion_target': DocumentConversionV1.NORMALIZED_HTML}
+#     print(document_conversion.convert_document(
+#         document=document, config=config, media_type='text/html').content)
 
 # Example with JSON
-with open(join(dirname(__file__), '../resources/example.html'),
+with open(join(dirname(__file__), '../resources/thesis/sample.pdf'),
           encoding='utf8') as document:
+    config = {'conversion_target': DocumentConversionV1.NORMALIZED_HTML}
     config['conversion_target'] = DocumentConversionV1.ANSWER_UNITS
     print(json.dumps(
         document_conversion.convert_document(document=document, config=config),
         indent=2))
 
-# Examples of index_document API
-print(
-    "########## Example of a dry run of index_document with only a document "
-    "##########")
-with open(join(dirname(__file__), '../resources/example.html'),
-          encoding='utf8') as document:
-    config = {
-        'retrieve_and_rank': {
-            'dry_run': 'true'
-        }
-    }
-    print(json.dumps(
-        document_conversion.index_document(config=config, document=document),
-        indent=2))
+# # Examples of index_document API
+# print(
+#     "########## Example of a dry run of index_document with only a document "
+#     "##########")
+# with open(join(dirname(__file__), '../resources/example.html'),
+#           encoding='utf8') as document:
+#     config = {
+#         'retrieve_and_rank': {
+#             'dry_run': 'true'
+#         }
+#     }
+#     print(json.dumps(
+#         document_conversion.index_document(config=config, document=document),
+#         indent=2))
 
-print(
-    "########## Example of a dry run of index_document with only metadata "
-    "##########")
-config = {
-    'retrieve_and_rank': {
-        'dry_run': 'true'
-    }
-}
-metadata = {
-    'metadata': [
-        {'name': 'id', 'value': '12345'}
-    ]
-}
-print(
-    json.dumps(
-        document_conversion.index_document(config=config, metadata=metadata),
-        indent=2))
+# print(
+#     "########## Example of a dry run of index_document with only metadata "
+#     "##########")
+# config = {
+#     'retrieve_and_rank': {
+#         'dry_run': 'true'
+#     }
+# }
+# metadata = {
+#     'metadata': [
+#         {'name': 'id', 'value': '12345'}
+#     ]
+# }
+# print(
+#     json.dumps(
+#         document_conversion.index_document(config=config, metadata=metadata),
+#         indent=2))
 
-print(
-    "########## Example of a dry run of index_document with document and "
-    "metadata "
-    "##########")
-with open(join(dirname(__file__), '../resources/example.html'),
-          encoding='utf8') as document:
-    config = {
-        'retrieve_and_rank': {
-            'dry_run': 'true'
-        }
-    }
-    metadata = {
-        'metadata': [
-            {'name': 'id', 'value': '12345'}
-        ]
-    }
-    print(json.dumps(
-        document_conversion.index_document(config=config, document=document,
-                                           metadata=metadata), indent=2))
+# print(
+#     "########## Example of a dry run of index_document with document and "
+#     "metadata "
+#     "##########")
+# with open(join(dirname(__file__), '../resources/example.html'),
+#           encoding='utf8') as document:
+#     config = {
+#         'retrieve_and_rank': {
+#             'dry_run': 'true'
+#         }
+#     }
+#     metadata = {
+#         'metadata': [
+#             {'name': 'id', 'value': '12345'}
+#         ]
+#     }
+#     print(json.dumps(
+#         document_conversion.index_document(config=config, document=document,
+#                                            metadata=metadata), indent=2))
 
-print(
-    "########## Example of a dry run of index_document with document, "
-    "metadata, "
-    "and additional config for conversion"
-    "##########")
-with open(join(dirname(__file__), '../resources/example.html'),
-          encoding='utf8') as document:
-    config = {
-        'convert_document': {
-            'normalized_html': {
-                'exclude_content': {"xpaths": ["//body/div"]}
-            }
-        },
-        'retrieve_and_rank': {
-            'dry_run': 'true'
-        }
-    }
-    metadata = {
-        'metadata': [
-            {'name': 'id', 'value': '12345'}
-        ]
-    }
-    print(json.dumps(
-        document_conversion.index_document(config=config, document=document,
-                                           metadata=metadata), indent=2))
+# print(
+#     "########## Example of a dry run of index_document with document, "
+#     "metadata, "
+#     "and additional config for conversion"
+#     "##########")
+# with open(join(dirname(__file__), '../resources/example.html'),
+#           encoding='utf8') as document:
+#     config = {
+#         'convert_document': {
+#             'normalized_html': {
+#                 'exclude_content': {"xpaths": ["//body/div"]}
+#             }
+#         },
+#         'retrieve_and_rank': {
+#             'dry_run': 'true'
+#         }
+#     }
+#     metadata = {
+#         'metadata': [
+#             {'name': 'id', 'value': '12345'}
+#         ]
+#     }
+#     print(json.dumps(
+#         document_conversion.index_document(config=config, document=document,
+#                                            metadata=metadata), indent=2))
 
 # print("########## Example of index_document with document, metadata (A
 # service instance id, SOLR cluster id, and "

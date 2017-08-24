@@ -19,10 +19,16 @@ The v1 Document Conversion service
 from .watson_developer_cloud_service import WatsonDeveloperCloudService
 import os
 import json
-
+'''
+{
+"url" : "https://gateway.aibril-watson.kr/document-conversion/api",
+"username" : "61d34a43-4105-42a0-9ec8-01774c3ce1a6",
+"password" : "ydCaaRag3Um5" 
+}
+'''
 
 class DocumentConversionV1(WatsonDeveloperCloudService):
-    DEFAULT_URL = 'https://gateway.watsonplatform.net/document-conversion/api'
+    DEFAULT_URL = 'https://gateway.aibril-watson.kr/document-conversion/api'
     ANSWER_UNITS = 'answer_units'
     NORMALIZED_HTML = 'normalized_html'
     NORMALIZED_TEXT = 'normalized_text'

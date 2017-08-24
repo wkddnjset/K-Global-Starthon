@@ -1,4 +1,4 @@
-#!c:\장언\프로젝트\k-global project\scripts\python.exe
+#!c:\jangwon\project\k-glob~2\scripts\python.exe
 
 # $Id: rst2xml.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: David Goodger <goodger@python.org>

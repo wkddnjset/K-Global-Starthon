@@ -1,4 +1,4 @@
-#!c:\장언\프로젝트\k-global project\scripts\python.exe
+#!c:\jangwon\project\k-glob~2\scripts\python.exe
 # -*- coding: utf8 -*-
 # :Copyright: 짤 2015 G체nter Milde.
 # :License: Released under the terms of the `2-Clause BSD license`_, in short:

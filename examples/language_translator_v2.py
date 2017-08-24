@@ -20,7 +20,6 @@ language_translator = LanguageTranslatorV2(
 #         forced_glossary=custom_model), indent=2))
 
 print(json.dumps(language_translator.get_models(), indent=2))
-
 # print(
 #     json.dumps(language_translator.get_model('en-es-conversational'),
 #                indent=2))
@@ -28,9 +27,8 @@ print(json.dumps(language_translator.get_models(), indent=2))
 # delete custom model
 # print(json.dumps(language_translator.delete_model(
 # '13860c86-ec3f-4e60-8cbe-3ef0048f92af'), indent=2))
-
 print(json.dumps(
-  language_translator.translate('this is my name. what is your name?', source='en', target='ko'), 
+  language_translator.translate('deep learning is good', source='en', target='ko'), 
       indent=2,
       ensure_ascii=False))
 

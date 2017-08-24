@@ -1,4 +1,4 @@
-#!c:\장언\프로젝트\k-global project\scripts\python.exe
+#!c:\jangwon\project\k-glob~2\scripts\python.exe
 
 # Author: 
 # Contact: grubert@users.sf.net
