@@ -7,9 +7,10 @@
 
 
 ## Members & Role
-- 
-- 
-- 
+- **Lim Jongha**
+- **Go Jaewon**
+- **Yoon SeokJun**
+- **Kim Bora**
 - **Seo Jangwon** *(wkddnjset@naver.com)*
   - 3D Modeling *(Rhino5)*
   - Frontend *(Watson API, python)*
