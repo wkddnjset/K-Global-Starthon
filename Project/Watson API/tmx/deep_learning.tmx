@@ -1,0 +1,1888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx version="1.4">
+  <header creationtool="" creationtoolversion=""
+	segtype="sentence" o-tmf="" adminlang="EN"
+	srclang="en" datatype="rtf" o-encoding="UTF-8" />
+  <body>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>기계학습의 한 분야인 딥러닝은 최근 다양한 분야에서 비약적인 성능 향상에 기여하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Deep learning which is a subfield of machine learning began to be used in music genre classification in recent years.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문은 음악 장르분류 문제에 있어서 최초로 멀티모달 딥러닝 구조를 이용할 수 있는 모델을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose a model that can utilize the multimodal deep learning architecture in the music genre classification problem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>음악의 스펙트로그램 이미지에 대한 분석을 위해 CNN(Convolutional Neural Network)을 사용하였으며, 음원의 연속적인 데이터에 대해 RNN(Recurrent Neural Network)을 사용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>CNN(Convolutional Neural Network) was used for the spectrogram image of music and RNN(Recurrent Neural Network) was used for the sequential data of the sound.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한 대표적인 정규화(Regularization)기법인 dropout 을 적용하여 과적합(overfitting) 문제를 해결하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, dropout which is a representative regularizer was applied to prevent overfitting.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 연구에서 제안된 멀티모달 딥러닝 모델이 단일 딥러닝 방법보다 음악 장르 분류의 성능 향상에 탁월하게 작용함을 확인할 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The model using multimodal deep learning proposed in this study was found to be more effective than unimodal deep learning for music genre classification.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>정확한 강수예측을 위해서는 예측인자 선정과 예측방법에 대한 선택이 매우 중요하다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For accurate precipitation forecasts the choice of weather faoctrs and prediction method is very important.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근에는 강수예측 방법으로 기계학습 기법이 많이 사용되고 있으며, 그 중에서도 특히 인공신경망을 사용한 강수예측 방법은 좋은 성능을 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, machinele arning has been widely used for forecasting precipitation, and artificial neural network, one of machine learning techniques, showed good performance.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 딥러닝 기법 중 하나인 DBN(deep belief network)를 이용한 새로운 강수예측 방법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we suggest a new method for forecasting precipitation using DBN, one of deep learning techniques.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>DBN는 비지도 사전 학습을 통해 초기 가중치를 설정하여 기존 인공신경망의 문제점을 보완한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>DBN has an advantage that initial weights are set by unsupervised learning, so this compensates for the defects of artificial neural networks.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>예측인자로는 기온, 전일-전주 강수일, 태양과 달 궤도 관련 자료를 선정하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We used past precipitation, temperature, and the parameters of the sun and moon"s motion as features for forecasting precipitation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>기온과 전일-전주 강수일은 서울에서의 1974년부터 2013년까지 총 40년간의 AWS(automatic weather system) 관측 자료를 사용하였고, 태양과 달의 궤도 관련 자료는 서울을 중심으로 계산한 결과를 사용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The dataset consists of observation data which had been measured for 40 years from AWS in Seoul.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>전체 기간에서 일부는 학습 자료로 사용하여 예측모델을 생성하였고, 나머지를 생성한 모델의 검증 자료로 사용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Experiments were based on 8-fold cross validation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>모델 검증 결과로 나온 예측값들은 확률값을 가지며 임계치를 이용하여 강수유무를 판별하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As a result of estimation, we got probabilities of test dataset, so threshold was used for the decision of precipitation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>강수 정확도의 척도로 양분예보기법 중 CSI(critical successive index)와 Bias(frequency bias)를 계산하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>CSI and Bias were used for indicating the precision of precipitation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이를 통해 DBN와 MLP(multilayer perceptron)의 성능을 비교한 결과 DBN의 강수 예측 정확도가 높았고, 수행속도 또한 2배 이상 빨랐다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Our experimental results showed that DBN performed better than MLP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 시각장애인 및 교통약자의 자유로운 보행을 보장하기 위한 많은 기술들이 연구되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, a number of techniques to ensure the free walking for the visually impaired and transportation vulnerable have been studied.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>자유로운 보행을 위한 장치로는 영상카메라, 초음파센서 및 가속도 센서 등을 이용하는 스마트 지팡이와 스마트 안경 관련 기술이 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As a device for free walking, there are such as a smart cane and smart glasses to use the computer vision, ultrasonic sensor, acceleration sensor technology.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>대표적인 기술로는 물체를 식별하여 장애물을 검출하고 보행 가능 영역을 추출하는 기술, 랜드마크 심볼 정보를 인식하여 주위 환경 정보를 주는 기술 등 여러 가지 기술이 개발되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In a typical technique, such as techniques for finds object and detect obstacles and walking area and recognizes the symbol information for notice environment information.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 시각장애인에게 필요한 시설의 대표 심볼을 선정하여 착용한 영상 장치의 정보로부터 심볼을 인식하는 알고리즘을 딥러닝 기술을 이용하여 연구하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we studied recognization algorithm of the selected symbols that are required to visually impaired, with the deep learning algorithm.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그 결과로 딥러닝 영상처리 분야에서 사용되는 CNN(Convolutional Neural Network)기법을 사용하여 서로 다른 딥러닝 구조를 실험을 통하여 비교하고 분석하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As a results, Use CNN(Convolutional Nueral Network) technique used in the field of deep-learning image processing, and analyzed by comparing through experimentation with various deep learning architectures.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>딥러닝은 인공신경망(neural network)이라는 인공지능분야의 모형이 발전된 형태로서, 계층구조로 이루어진 인공신경망의 내부계층(hidden layer)이 여러 단계로 이루어진 구조이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Deep learning model is a kind of neural networks that allows multiple hidden layers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>딥러닝에서의 주요 모형은 합성곱신경망(convolutional neural network), 순환신경망(recurrent neural network), 그리고 심층신뢰신경망(deep belief network)의 세가지라고 할 수 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There are various deep learning architectures such as convolutional neural networks, deep belief networks and recurrent neural networks.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그 중에서 현재 흥미로운 연구가 많이 발표되어서 관심이 집중되고 있는 모형은 지도학습(supervised learning)모형인 처음 두 개의 모형이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Those have been applied to fields like computer vision, automatic speech recognition, natural language processing, audio recognition and bioinformatics where they have been shown to produce state-of-the-art results on various tasks.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>따라서 본 논문에서는 지도학습모형의 가중치를 최적화하는 기본적인 방법인 오류역전파 알고리즘을 살펴본 뒤에 합성곱신경망과 순환신경망의 구조와 응용사례 등을 살펴보고자 한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Among those architectures, convolutional neural networks and recurrent neural networks are classified as the supervised learning model.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본문에서 다루지 않은 모형인 심층신뢰신경망은 아직까지는 합성곱신경망 이나 순환신경망보다는 상대적으로 주목을 덜 받고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>And in recent years, those supervised learning models have gained more popularity than unsupervised learning models such as deep belief networks, because supervised learning models have shown fashionable applications in such fields mentioned above.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그러나 심층신뢰신경망은 CNN이나 RNN과는 달리 비지도학습(unsupervised learning)모형이며, 사람이나 동물은 관찰을 통해서 스스로 학습한다는 점에서 궁극적으로는 비지도학습모형이 더 많이 연구되어야 할 주제가 될 것이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Steganalysis is to detect information hidden by steganography inside general data such as images.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>스테그아날리시스(Steganalysis)란 이미지 등 일반적인 자료에 암호화된 정보를 은닉하는 스테가노그래피(Steganography)에 대한 검출 및 분석 방법으로, 기계학습 기반 방법론을 포함한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There are stegoanalysis techniques that use machine learning (ML).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>기존 기계학습 기반 스테그아날리시스는 영상(Image)의 특징(Feature) 추출 및 모델링에 기반하며, 최근 딥러닝(Deep Learning)의 적용으로 검출 정확도가 큰 폭으로 향상되었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Existing ML approaches to steganalysis are based on extracting features from stego images and modeling them.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>하지만 현존하는 스테그아날리시스 모델은 단일 스테가노그래피 기법에 대해 국한되어 있어 학습에 사용되지 않은 스테고(Stego) 이미지의 경우 검출이 불가능한 결정적 한계를 가진다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently deep learning-based methodologies have shown significant improvements in detection accuracy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 연구에서는 다양한 스테가노그래피 기법으로 생성된 스테고이미지에 딥러닝을 적용하여 스테그아날리시스를 학습하는 범용적 모델을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, all the existing methods, including deep learning-based ones, have a critical limitation in that they can only detect stego images that are created by a specific steganography method.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>다양한 실험을 통해 제안 기법의 효용성 및 가능성을 확인하고, 범용적 스테그아날리시스 모델이 각각에 특화된 검출 기법과 유사한 정확도로 스테고 이미지를 검출할 수 있음을 보인다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose a generalized steganalysis method that can model multiple types of stego images using deep learning.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>도시에서 홍수 피해를 방지하기 위한 침수를 예측하기 위해 본 논문에서는 딥러닝(Deep Learning)기법을 적용한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Through various experiments, we confirm the effectiveness of our approach and envision directions for future research.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>딥러닝 기법 중 시계열 데이터 분석에 적합한 Recurrent Neural Networks (RNNs)을 활용하여 강의 수위 관측 데이터를 학습하고 침수 가능성을 예측하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In particular, we show that our method can detect each type of steganography with the same level of accuracy as that of a steganalysis method dedicated to that type of steganography, thereby demonstrating the general applicability of our approach to multiple types of stego images.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>예측 정확도 검증을 위해 사용한 데이터는 미국의 트리니티 강의 데이터로, 학습을 위해 2013 년부터 2015 년까지 데이터를 사용하였고 평가 데이터로는 2016 년 데이터를 사용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This paper presents an attempt to apply Deep Learning technology to solve the problem of forecasting floods in urban areas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>입력은 16개의 레코드로 구성된 15분단위의 시계열 데이터를 사용하였고, 출력으로는 30분과 60분 후의 강의 수위 예측 정보이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We employ Recurrent Neural Networks (RNNs), which are suitable for analyzing time series data, to learn observed data of river water and to predict the water level.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험에 사용한 딥러닝 모델들은 표준 RNN, RNN-BPTT(Back Propagation Through Time), LSTM(Long Short-Term Memory)을 사용했는데, 그 중 LSTM의 NE(Nash Efficiency)가 0.98을 넘는 정확도로 기존 연구에 비해 매우 높은 성능 향상을 보였고, 표준 RNN과 RNN-BPTT에 비해서도 좋은 성능을 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To test the model, we use water observation data of a station in the Trinity River, Texas, the U.S., with data from 2013 to 2015 for training and data in 2016 for testing.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>딥러닝 프레임워크의 대표적인 기능으로는 ‘자동미분’과 ‘GPU의 활용’ 등을 들 수 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Input of the neural networks is a 16-record-length sequence of 15-minute-interval time-series data, and output is the predicted value of the water level at the next 30 minutes and 60 minutes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문은 파이썬의 라이브러리 형태로 사용 가능한 프레임워크 중에서 구글의 텐서플로와 마이크로소프트의 CNTK, 그리고 텐서플로의 원조라고 할 수 있는 티아노를 비교하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the experiment, we compare three Deep Learning models including standard RNN, RNN trained with Back Propagation Through Time(RNN-BPTT), and Long Short-Term Memory (LSTM).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본문에서는 자동미분의 개념과 GPU의 활용형태를 간단히 설명하고, 그 다음에 logistic regression을 실행하는 예를 통하여 각 프레임워크의 문법을 알아본 뒤에, 마지막으로 대표적인 딥러닝 응용인 CNN의 예제를 실행시켜보고 코딩의 편의성과 실행속도 등을 확인해 보았다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The prediction quality of LSTM can obtain Nash Efficiency exceeding 0.98, while the standard RNN and RNN-BPTT also provide very high accuracy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그 결과, 편의성의 관점에서 보면 티아노가 가장 코딩 하기가 어렵고, CNTK와 텐서플로는 많은 부분이 비슷하게 추상화 되어 있어서 코딩이 비슷하지만 가중치와 편향을 직접 정의하느냐의 여부에서 차이를 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Horizon correction is a crucial stage for image composition enhancement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그리고 각 프레임워크의 실행속도에 대한 평가는 ‘큰 차이는 없다’는 것이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose a deep learning based method for estimating the slanted angle of a photograph and correcting it.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>텐서플로는 티아노에 비하여 속도가 느리다는 평가가 있어왔는데, 본 연구의 실험에 의하면, 비록 CNN 모형에 국한되었지만, 텐서플로가 아주 조금이지만 빠른 것으로 나타났다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To estimate and correct the horizon direction, existing methods use hand-crafted low-level features such as lines, planes, and gradient distributions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>CNTK의 경우에도, 비록 실험환경이 달랐지만, 실험환경의 차이에 의한 속도의 차이의 편차범위 이내에 있는 것으로 판단이 되었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, these methods may not work well on the images that contain no lines or planes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 연구에서는 세 종류의 딥러닝 프레임워크만을 살펴보았는데, 위키피디아에 따르면 딥러닝 프레임워크의 종류는 12가지가 있으며, 각 프레임워크의 특징을 15가지 속성으로 구분하여 차이를 특정하고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To tackle this limitation and robustly estimate the slanted angle, we propose a convolutional neural network (CNN) based method to estimate the slanted angle by learning more generic features using a huge dataset.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그 많은 속성 중에서 사용자의 입장에서 볼 때 중요한 속성은 어떤 언어(파이썬, C++, Java, 등)로 사용가능한지, 어떤 딥러닝 모형에 대한 라이브러리가 잘 구현되어 있는지 등일 것이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, we utilize multiple adaptive spatial pooling layers to extract multi-scale image features for better performance.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그리고 사용자가 대규모의 딥러닝 모형을 구축한다면, 다중 GPU 혹은 다중 서버를 지원하는지의 여부도 중요할 것이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the experimental results, we show our CNN-based approach robustly and accurately estimates the slanted angle of an image regardless of the image content, even if the image contains no lines or planes at all.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한 딥러닝 모형을 처음 학습하는 경우에는 사용설명서가 많은지 예제 프로그램이 많은지 여부도 중요한 기준이 될 것이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This paper proposes a novel aesthetic photo recomposition method using a deep convolutional neural network (DCNN).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문은 딥 러닝(deep learning)을 이용하여 입력 영상의 기울어진 정도를 측정하고 수평에 맞게 바로 세우는 방법을 제시한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Previous recomposition approaches define the aesthetic score of photo composition based on the distribution of salient objects, and enhance the photo composition by maximizing the score.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>기존 방법들은 일반적으로 영상 내에서 선분, 평면 등 하위 레벨의 특징들을 추출한 후 이를 이용해 영상의 기울어진 정도를 측정한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>These methods suffer from heavy computational overheads, and often fail to enhance the composition because their optimization depends on the performance of existing salient object detection algorithms.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이러한 방법들은 영상 내에 선이나 평면이 존재하지 않는 경우에는 제대로 동작하지 않는다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Unlike previous approaches, we address the photo recomposition problem by utilizing DCNN, which shows remarkable performance in object detection and recognition.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 대규모 데이터 셋을 통해 영상의 다양한 특징들에 대해 학습 가능한 Convolutional Neural Network (CNN)를 이용하여 인물이나 복잡한 배경으로 구성된 기울어진 영상에 대해서도 강인하게 동작하는 프레임워크를 제시한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>DCNN is used to iteratively predict cropping directions for a given photo, thus generating an aesthetically enhanced photo in terms of composition.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한, 네트워크에 가변 공간적 (adaptive spatial) pooling 레이어를 추가하여 영상의 다중 스케일 특징을 동시에 고려할 수 있게 하여 영상의 기울어진 정도를 측정하는 성능을 높인다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Experimental results and user study show that the proposed framework can automatically crop the photo to follow specific composition guidelines, such as the rule of thirds.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험 결과를 통해 다양한 콘텐츠를 포함한 영상의 기울어짐을 높은 정확도로 바로 세울 수 있음을 확인할 수 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Malware, including ransomware to quickly detect, in this study, to provide an analysis method of malicious code through the image analysis that has been learned in the deep learning of artificial intelligence.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 딥러닝 기법 중 하나인 deep convolutional neural network (DCNN)을 이용하여 영상의 구도를 개선하는 방법을 제시한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>First, to analyze the 2,400 malware data, and learning in artificial neural network Convolutional neural network and to image data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>기존의 구도 개선 방법들은 영상의 주요 물체의 위치를 바탕으로 한 구도 평가 점수를 정의한 뒤 최적화를 통해 평가 점수를 향상시키는 방향으로 영상을 개선한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Extracts subgraphs to convert the graph of abstracted image, summarizes the set represent malware.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이는 계산량이 많고 기존 주요 물체 검출 알고리즘의 성능에 종속적이기 때문에 영상에 따라 구도 개선이 제대로 수행되지 않는 경우가 존재한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The experimentally analyzed the malware is not how similar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 영상의 특징 추출에 뛰어난 성능을 보이는 DCNN을 이용해 영상을 반복적으로 크롭하여 미학적으로 구도가 개선된 영상을 얻는 방법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Using deep learning of artificial intelligence by classifying malware and It shows the possibility of accurate malware detection</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험 결과 및 사용자 평가를 통해 본 논문에서 제안한 알고리즘이 주어진 영상을 특정 구도 가이드라인(삼분할법, 주요 물체의 크기 등)을 따르도록 자동으로 크롭한다는 것을 보인다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This paper proposes a deep learning algorithm based sign detection and recognition system for the blind.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>랜섬웨어를 포함한 악성코드를 빠르게 탐지하여 빅데이터를 보호하기 위해 본 연구에서는 인공지능의 딥러닝으로 학습된 이미지 분석을 통한 악성코드 분석 기법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The proposed system is composed of sign detection stage and sign recognition stage.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>우선 악성코드들에서 일반적으로 사용하는 2,400여개 이상의 데이터를 분석하여 인공신경망 Convolutional neural network으로 학습하고 데이터를 이미지화 하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the sign detection stage, aggregated channel features are extracted and AdaBoost classifier is applied to detect regions of interest of the sign.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>추상화된 이미지 그래프로 변환하고 부분 그래프를 추출하여 악성코드가 나타내는 집합을 정리하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the sign recognition stage, convolutional neural network is applied to recognize the regions of interest of the sign.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안한 논문에서 추출된 부분 집합들 간의 비교 분석을 통해 해당 악성코드들이 얼마나 유사한지를 실험으로 분석하였으며 학습을 통한 방법을 이용하여 빠르게 추출하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, the AdaBoost classifier is designed to decrease the number of undetected signs, and deep learning algorithm is used to increase recognition accuracy and which leads to removing false positives which occur in the sign detection stage.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험결과로부터 인공지능의 딥러닝을 이용한 정확한 악성코드 탐지 가능성과 악성코드를 이미지화하여 분류함으로써 더욱 빠르고 정확한 탐지 가능성을 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Based on our experiments, proposed method efficiently decreases the number of false positives compared with other methods.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문은 딥러닝 알고리즘을 기반으로 하여 시각장애인을 위한 표지판을 검출하고 인식하는 시스템을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, deep learning encoder-based approach has been actively applied in the field of sentiment classification.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안된 시스템은 크게 표지판 검출 단계와 표지판 인식 단계로 나눠지는데 표지판 검출 단계에서는 영상에서 응집 채널 특징을 추출한 뒤 아다부스트 분류기를 적용하여 표지판 관심영역을 검출하였고, 표지판 인식 단계에서는 검출한 표지판 관심영역들에 합성곱 신경망을 적용하여 어떤 표지판인지 인식하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, Long Short-Term Memory network deep learning encoder, the commonly used architecture, lacks the quality of vector representation when the length of the documents is prolonged.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 미검출된 표지판의 개수가 최대한 감소하도록 아다부스트 분류기를 설계하였고, 딥러닝 알고리즘을 사용하여 인식 정확도를 높임으로써 검출 단계에서 발생한 양성 오류들을 제거시켰다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this study, for effective classification of the sentiment documents, we suggest the use of attention method-based deep learning encoder that generates document vector representation by weighted sum of the outputs of Long Short-Term Memory network based on importance.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험 결과, 제안된 방법의 양성 오류 개수가 다른 방법들의 양성 오류 개수보다 효과적으로 감소했음을 확인하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, we propose methods to modify the attention method-based deep learning encoder to suit the sentiment classification field, which consist of a part that is to applied to window attention method and an attention weight adjustment part.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 감정 분류 분야에서 딥러닝 인코더 기반의 접근 방법이 활발히 적용되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the window attention method part, the weights are obtained in the window units to effectively recognize feeling features that consist of more than one word.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>딥러닝 인코더 기반의 접근 방법은 가변 길이 문장을 고정 길이 문서 벡터로 압축하여 표현한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the attention weight adjustment part, the learned weights are smoothened.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>하지만 딥러닝 인코더에 흔히 사용되는 구조인 장･단기 기억망(Long Short-Term Memory network) 딥러닝 인코더는 문서가 길어지는 경우, 문서 벡터 표현의 품질이 저하된다고 알려져 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Experimental results revealed that the performance of the proposed method outperformed Long Short-Term Memory network encoder, showing 89.67% in accuracy criteria.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 효과적인 감정 문서의 분류를 위해, 장･단기 기억망의 출력을 중요도에 따라 가중합하여 문서 벡터 표현을 생성하는 주목방법 기반의 딥러닝 인코더를 사용하는 것을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, the wide spread of IoT (Internet of Things) based technology enables the accumulation of big biometric data on livestock.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한, 주목 방법 기반의 딥러닝 인코더를 문서의 감정 분류 영역에 맞게 수정하는 방법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The availability of big data allows the application of diverse machine learning based algorithm in the field of agriculture, which significantly enhances the productivity of farms.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안하는 방법은 윈도우 주목 방법(Window Attention Method)을 적용한 단계와 주목 가중치 재조정(Weight Adjustment) 단계로 구성된다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose an abnormal livestock detection algorithm based on deep learning, which is the one of the most prominent machine learning algorithm.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>윈도우 주목 방법은 한 단어 이상으로 구성된 감정 자질을 효과적으로 인식하기 위해, 윈도우 단위로 가중치를 학습한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In our proposed scheme, the livestock are divided into two clusters which are normal and abnormal (disease) whose biometric data has different characteristics.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>주목 가중치 재조정에서는 학습된 가중치를 평활화(Smoothing) 한다, 실험 결과, 본 논문에서 제안하는 방법은 정확도 기준으로 89.67%의 성능을 나타내어 장･단기 기억망 인코더보다 높은 성능을 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Then a deep neural network is used to classify these two clusters based on the biometric data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 들어, 효과적인 화재감지를 위해 이종 화재센서 데이터들을 융합하는 방안들이 제안되었으나, 룰 기반의 방법의 경우 적응성과 정밀도가 낮고, 퍼지추론의 경우 영상에 대한 고려 미흡으로 검출 속도와 정밀도가 떨어지는 등의 문제점들이 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>By using our proposed scheme, the normal and abnormal livestock can be identified based on big biometric data, even though the detailed stochastic characteristics of biometric data are unknown, which is beneficial to prevent epidemic such as mouth-and-foot disease.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>더불어 영상기반 딥러닝 기술들도 제안되었으나, 실제 상황에서 카메라가 없거나 카메라 영역 밖의 화재 발생에 대한 신속한 탐지가 어렵다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, many embedded devices that have the computing capability required for deep learning have become available; hence, many new applications using these devices are emerging.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이에 본 논문에서는 CNN 기반의 딥러닝 알고리즘과 온도·습도·가스·연기를 포함하는 이종 화재센서 데이터기반의 퍼지추론엔진을 결합시킨 새로운 방식의 화재 감지 시스템을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, these embedded devices have an architecture different from that of PCs and highperformance servers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이로써 영상 데이터를 활용한 신속한 화재 감지와 이종 센서 데이터들을 이용한 신뢰성 있는 화재 감지가 가능해짐을 보인다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose a method that improves the performance of deep-learning framework by considering the architecture of an embedded device that shares memory between the CPU and the GPU.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한, 대규모 시스템에서 컴퓨팅 파워의 지나친 서버 집중을 방지하기 위해 화재 인식 알고리즘에 분산 컴퓨팅 구조를 채택하여 확장성을 높인다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The proposed method is implemented in Caffe, an open-source deep-learning framework, and is evaluated on an NVIDIA Jetson TK1 embedded device.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>마지막으로, NIST 화재 동역학 시뮬레이터를 이용한 화재 시뮬레이션 데이터와 화재영상을 활용하여 화재가 점진적으로 번지는 환경과 급작스럽게 폭발이 발생하는 환경에서 실험을 수행함으로써 시스템의 성능을 검증한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the experiment, we investigate the image recognition performance of several state-of-the-art deeplearning networks, including AlexNet, VGGNet, and GoogLeNet.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 사물 인터넷 기술의 활용을 통해 가축 및 축사 관련 빅데이터 축적이 가능해 졌다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Our results show that the proposed method can achieve significant performance gain.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이러한 빅 데이터를 기반으로 다양한 기계학습방안들이 가축관리에 적용되어 축산농가의 생산성을 크게 향상시키고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For instance, in AlexNet, we could reduce image recognition latency by about 33% and energy consumption by about 50%.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 연구에서는 현재 가장 주목받고 있는 기계학습 기술인 딥러닝을 적용한 질병개체 파악방안을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we provide an authentication technology for verifying dynamic signature made by finger on smart phone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안한 방안에서는 정상상태와 질병상태의 가축들이 섞여있는 환경에서 상태에 따라 다른 생체데이터 특성을 지닐 때 심층신경망을 이용하여 가축의 상태를 분류한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the proposed method, we are using the Auto-Encoder-based 1 class model in order to effectively distinguish skilled forgery signature.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안 방안은 가축 생체데이터의 통계적 특성을 모르는 상황에서도 학습을 통해서 가축의 상태를 정확하게 분류할 수 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition to the basic dynamic signature characteristic information such as appearance and velocity of a signature, we use accelerometer value supported by most of the smartphone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>질병개체의 정확한 파악은 구제역과 같은 전염성 질병을 예방하는데 큰 도움이 될 수 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Signed data is re-sampled to give the same length and is normalized to a constant size.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근, 딥러닝을 사용 가능한 임베디드 디바이스가 상용화됨에 따라 임베디드 시스템 영역에서도 딥러닝 활용에 대한 다양한 연구가 진행되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We built a test set for evaluation and conducted experiment in three ways.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그러나 임베디드 시스템을 고성능 PC 환경과 비교하면 상대적으로 저사양의 CPU/GPU 프로세서와 메모리를 탑재하고 있으므로 딥러닝 기술의 적용에 있어서 많은 제약이 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As results of the experiment, the proposed acceleration sensor value and 1 class model shows 6.9% less EER than previous method.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 다양한 최신 딥러닝 네트워크들을 임베디드 디바이스에 적용했을때의 성능을 시간과 전력이라는 관점에서 실험적으로 평가한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose a new automatic modulation classification method based on deep neural networks (DNN).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한, 호스트 CPU와 GPU 디바이스간의 메모리를 공유하는 임베디드 시스템들의 아키텍처적인 특성을 이용하여 메모리 복사를 줄임으로써 실시간 성능과 저전력성을 높이는 방법을 제시한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The proposed method uses nineteen statistical features extracted from the received signal samples as an input to the fully connected neural networks with the four layers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안된 방법은 대표적인 공개 딥러닝 프레임워크인 Caffe를 수정하여 구현되었으며, 임베디드 GPU를 탑재한 NVIDIA Jetson TK1에서 성능평가 되었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The deep neural network is trained with the number of 30,000 training data generated by computer simulations.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험결과, 대부분의 딥러닝 네트워크에서 뚜렷한 성능향상을 관찰할 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Various signal to noise ratios and fading channel conditions are considered for generation of the training data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>특히, 메모리 사용량이 높은 AlexNet에서 약 33%의 이미지 인식 속도 단축과 50%의 소비 전력량 감소를 관찰할 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The experimental results show that the proposed modulation classification technique outperforms the existing methods both in additive white Gaussian noise(AWGN) and Rician fading channels.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 스마트폰에서 손가락으로 서명하는 동적서명에서 위조서명에 강건한 검증 방법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently deep learning outstands because of big data, prevention of over-fitting and improvement of hardware.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 위조서명을 효과적으로 구분할 수 있도록 재생산 신경망의 일종인 1 class Auto-Encoder 모델을 사용한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>One of them an CNN(Convolutional Neural Networks) is available to robot environment because it achieves some degree of shift, deformation and scale invariance.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>핑거서명에서는 지원되지 않는 펜 압력 등 기존의 특징 정보 대신 대부분의 스마트폰에서 지원하는 가속도센서를 추가로 활용하여 서명이 이루어지고 있는 동안 스마트폰의 동적인 움직임의 특징정보를 추출한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we experiment video-based face recognition using 3D CNN on the ETRI face video.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>서명 데이터는 리샘플링을 통해 길이를 맞추고, 일정한 크기로 정규화하여 사용한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Training data is 50pictures captured from 1m away, and checking data are 50, 200, 100 pictures captured from 1m, 2m, 3m away and The rates of true recognition are 100%, 88% and 73% as maximum by varying the number of feature maps.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안 방법의 성능을 평가하기 위해 테스트셋을 구축하여 단일세션검증, 시간차 검증, 위조서명 검증의 3가지 실험을 실시하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This paper is a study to improve the classification efficiency of rotating objects by using deep neural networks to which a deep learning algorithm was applied.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험결과 위조서명 구분에 있어서 제안방법은 기존 방법보다 EER이 최대 6.9% 더 낮았다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For the classification experiment of rotating objects, COIL-20 is used as data and total 3 types of classifiers are compared and analyzed.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한, 서명의 모양과 속도만 사용한 기존의 방식보다 가속도센서를 추가한 방식이 1.5% 나은 성능을 보였고, 최고 3.5%의 에러율을 얻었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>3 types of classifiers used in the study include PCA classifier to derive a feature value while reducing the dimension of data by using Principal Component Analysis and classify by using euclidean distance, MLP classifier of the way of reducing the error energy by using error back-propagation algorithm and finally, deep learning applied DBN classifier of the way of increasing the probability of observing learning data through pre-training and reducing the error energy through fine-tuning.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 딥뉴럴네트워크에 기반한 디지털 통신 신호의 자동변조분류 기법을 제안하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In order to identify the structure-specific error rate of the deep neural networks, the experiment is carried out while changing the number of hidden layers and number of hidden neurons.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안하는 기법은 수신 신호 샘플로부터 19가지의 특징값을 계산하여 4개의 층을 가진 딥뉴럴네트워크의 입력 데이터로 사용하여 신호를 분류하는 방법이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The classifier using DBN showed the lowest error rate.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>19가지의 특징값에는 기존에 사용된 특징값과 고차 통계값 등의 다양한 특징값을 추가하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Its structure of deep neural networks with 2 hidden layers showed a high recognition rate by moving parameters to a location helpful for recognition.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>컴퓨터 시뮬레이터를 이용하여 BPSK, QPSK, 8-PSK, 16-QAM, 64-QAM의 5개의 변조 방식을 구분하기 위한 훈련데이터를 생성하여 다양한 신호대잡음비, 페이딩 환경에 대해 딥뉴럴네트워크를 훈련하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>While the Internet develops rapidly, a huge amount of image data collected from smart phones, digital cameras and black boxes are being shared through social media sites.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험 결과에서 AWGN 환경 및 Rician 페이딩환경에서 모두 제안한 딥뉴럴네트워크 기반의 변조분류 기법이 기존의 기법에 비해 좋은 성능을 나타냄을 확인 하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Generally, social images are handled by tagging them with information.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 빅데이터와 오버피팅 방지 하드웨어 성능향상으로 딥러닝(deep learning) 이 떠오르고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Due to the ease of sharing multimedia and the explosive increase in the amount of tag information, it may be considered too much hassle by some users to put the tags on images.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그 중에 CNN(Convolutional Neural Networks)은 이동 크기 회전에 내성을 갖기 때문에 로봇환경에서의 얼굴인식에 적합하다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Image retrieval is likely to be less accurate when tags are absent or mislabeled.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문은 3차원 CNN을 이용하여 비디오 기반 얼굴인식을 수행하였으며 데이터 베이스를 가지고 실험을 하였다 데이터 50장을 학습하여1m 50장 2m 200장 3m 100장을 검증한 결과로 특징 맵 수에 따라 최고 100%, 88%, 73% 인식률을 얻었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we suggest a method of extracting tags from social images by using image content.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문은 딥러닝 알고리즘을 적용한 깊은신경망을 이용하여 회전 객체의 분류 효율성을 높이기 위한 연구이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this method, CNN(Convolutional Neural Network) is trained using ImageNet images with labels in the training set, and it extracts labels from instagram images.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>회전객체의 분류 실험을 위하여 데이터는 COIL-20을 사용하며 객체의 2/3영역을 학습시키고 1/3영역을 유추하여 분류한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We use the extracted labels for automatic image tagging.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>연구에 이용된 3가지 분류기는 주성분 분석법을 이용해 데이터의 차원을 축소하면서 특징값을 추출하고 유클리디안 거리를 이용하여 분류하는 PCA분류기와 오류역전파 알고리즘을 이용하여 오류 에너지를 줄여가는 방식의 MLP분류기, 마지막으로 pre-training을 통하여 학습데이터의 관찰될 확률을 높여주고 fine-tuning으로 오류에너지를 줄여가는 방식의 딥러닝을 적용한 DBN분류기이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The experimental results show that the accuracy is higher than that of instagram retrievals.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>깊은신경망의 구조별 오류율을 확인하기 위하여 은닉층의 개수와 은닉뉴런의 개수를 변경해가며 실험하고 실제로 가장 낮은 오류율을 나타내는 구조를 기술한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we proposed an image analysis bot system with a method of pedestrian detection based on deep learning algorithm.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>가장 낮은 오류율을 보였던 분류기는 DBN을 이용한 분류기이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>First, the convolutional neural network, the algorithm most widely used for image analysis technology, was applied to object classifier generation technique.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>은닉층을 2개 갖는 깊은신경망의 구조로 매개 변수들을 인식에 도움이 되는 곳으로 이동 시켜 높은 인식률을 보여줬다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Second, we used it to implement an image analysis bot system.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>인터넷이 급속히 발달하는 가운데 스마트폰, 디지털 카메라, 블랙박스 등의 기기에서 수집되는 방대한 영상 데이터가 소셜 미디어 사이트를 통해 빠르게 공유되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We designed some base solutions such as intrusion detection solution, access detection solution and behavior detection solution for image analysis system.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>소셜 미디어 공유 사이트에서는 일반적으로 이미지의 태그 정보를 사용하는데, 멀티미디어를 공유하는 방법이 쉬워지고 그 양이 폭발적으로 증가함에 따라 이미지에 태그를 붙여야 하는 일은 번거로움이 되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the experiments, we compared our method with SIFT and HOG.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한 태그가 잘못 붙여지거나 안 붙은 경우에는 이미지 검색 정확도가 떨어질 가능성이 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Through the experimental results, we proved that our method takes advantage of the accuracy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 이미지의 내용정보를 이용하여 자동으로 이미지로부터 태그를 추출하는 방법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The recurrent neural network (RNN) is a deep learning model which is suitable to sequential or length-variable data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안하는 방법은 ImageNet에서 제공하는 대용량의 이미지 데이터와 라벨을 CNN(Convolutional Neural Network) 딥러닝 기법으로 학습시킨후, 인스타그램 이미지로부터 라벨 정보를 추출하는 것이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The Long Short-Term Memory (LSTM) mitigates the vanishing gradient problem of RNNs so that LSTM can maintain the long-term dependency among the constituents of the given input sequence.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>추출된 라벨 정보를 이용하여 자동 태깅한 후, 검색에 활용했을 때 인스타그램의 기존 검색보다 높은 정확도를 가지고 있음을 알 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose a LSTM based language model which can predict following words of a given incomplete sentence to generate a complete sentence.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 딥러닝 알고리즘을 기반으로 하는 보행자 검출 방법을 적용한 방범용 영상분석 봇 시스템을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To evaluate our method, we trained our model using multiple Korean corpora then generated the incomplete part of Korean sentences.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>영상분석 기술로 가장 많이 사용되고 있는 컨볼루션 신경망 모델을 이용하여 객체 분류기 생성 기술을 제안하고, 이를 기반으로 영상분석 봇 시스템을 구현하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The result shows that our language model was able to generate the fluent Korean sentences.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그리고 영상 감시 시스템을 위한 침입자 검출 솔루션, 출입자 감시 솔루션, 이상행위 감지 솔루션 등 기반 솔루션을 설계하여 실험을 진행하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We also show that the word based model generated better sentences compared to the other settings.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안하는 방법과 기존의 특징 추출 방법인 SIFT, HOG 등과의 비교 실험을 통해 제안하는 방법이 정확도 측면에서 우수한 결과를 얻을 수 있음을 증명하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Nowadays, computer science has recently been introduced and used deep learning algorithms in the field of pattern recognition.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>순환신경망은 순차적이거나 길이가 가변적인 데이터에 적합한 딥러닝 모델이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, those deep learning algorithm has not been utilized in the field of connectionist modeling of language process which has used pattern recognization algorithms for computational perspective yet.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>LSTM은 순환신경망에서 나타나는 기울기 소멸문제를 해결함으로써 시퀀스 구성 요소간의 장기의존성을 유지 할 수 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this study, we made a modeling which use the deep belief network which is a type of deep learning algorithm, and train the relation between words and semantic.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 LSTM에 기반한 언어모델을 구성하여, 불완전한 한국어 문장이 입력으로 주어졌을 때 뒤 이어 나올 단어들을 예측하여 완전한 문장을 생성할 수 있는 방법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>After training, the model conducted the lexical decision task for model, and the results were statistically verified that it is similar with result of behavioral experiment with frequency effect as center.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안된 방법을 평가하기 위해 여러 한국어 말뭉치를 이용하여 모델을 학습한 다음, 한국어 문장의 불완전한 부분을 생성하는 실험을 진행하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As the results of this study, the model showed that model was able to conduct language process through drawing the frequency effect.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험 결과, 제시된 언어모델이 자연스러운 한국어 문장을 생성해 낼 수 있음을 확인하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This result suggested that the model which used deep learning algorithm is able to be used as connectionist modeling, and to simulate the language process of human.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한 문장 최소 단위를 어절로 설정한 모델이 다른 모델보다 문장 생성에서 더 우수한 결과를 보임을 밝혔다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, in this study, we discussed how deep belief network can be applied to the connectionist modeling.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>영역기반 영상정합은 미리 정의된 특징의 도움 없이 영상을 정합할 수 있기 때문에, 기계학습과 접목된다면 이론 상 다양한 영상정합 문제에 적용 가능하다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Social-aware video displays not only the relationships between characters but also diverse information on topics such as economics, politics and culture as a story unfolds.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그러나 신속한 정합을 위하여, 미리 정의된 특징을 탐지하여 패치 쌍 후보를 선정에 사용하는데, 이는 영역기반 방법의 적용성에 제약을 준다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Particularly, the speaking habits and behavioral patterns of people in different situations are very important for the analysis of social relationships.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이를 해소하기 위하여 본 연구에서는 단순히 두 패치의 관련도 뿐만 아니라 두 패치가 어느 정도 공간 상 떨어져 있는지에 대한 정보를 제공하는 ConvNet Dart를 개발하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, when dealing with this dynamic multi-modal data, it is difficult for a computer to analyze the drama data effectively.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이러한 정보를 기반으로 효율적으로 패치 쌍 탐색공간을 줄일 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To solve this problem, previous studies employed the deep concept hierarchy (DCH) model to automatically construct and analyze social networks in a TV drama.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>추가로 Dart가 제대로 작동할 수 없는 영역을 식별하는 ConvNet Fad를 개발하여 정합의 정밀도를 높였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Nevertheless, since location knowledge was not included, they can only analyze the social network as a whole in stories.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 연구에서는 이들을 딥러닝으로 학습하였으며, 이를 위해 소수의 정합된 영상에서 다량의 예제를 생성하는 방법을 개발하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this research, we include location knowledge and analyze the social relations in different locations.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>마지막으로 단순한 영상정합 문제에 성공적으로 적용하여, 이러한 방법론이 작동하는 것을 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We adopt data from approximately 4400 minutes of a TV drama Friends as our dataset.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 컴퓨터 공학의 패턴인식 분야에서는 딥러닝 알고리즘이 도입 및 활용되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We process face recognition on the characters by using a convolutional- recursive neural networks model and utilize a bag of features model to classify scenes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>하지만, 언어 처리에 관한 계산주의적 접근을 위해 패턴인식 알고리즘들을 적용해 왔던 연결주의 모델링 분야에서는 아직까지 딥러닝 알고리즘이 제대로 활용되지 못하고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Then, in different scenes, we establish the social network between the characters by using a deep concept hierarchy model and analyze the change in the social network while the stories unfold.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 연구에서는 딥러닝 알고리즘 중 하나인 deep belief network 알고리즘을 이용한 모델링을 구축하고, 단어와 의미 간의 관계를 학습시켰다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Syntactic information represents the dependency relation between predicates and arguments, and it is helpful for improving the performance of Semantic Role Labeling systems.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>학습 과정 이후 모델용의 어휘 판단 과제를 수행하여, 빈도 효과(frequency effect)를 중심으로 행동 실험과 유사한 결과가 도출되는지 통계적으로 검증하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, syntax analysis can cause computational overhead and inherit incorrect syntactic information.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>모델링 수행 결과, 모델은 행동실험과 유사하게 빈도 효과를 도출해냄으로써, 모델이 정상적인 언어 처리가 가능함을 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To solve this problem, we exclude syntactic information and use only morpheme information to construct Semantic Role Labeling systems.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 연구의 결과는, 딥러닝 알고리즘으로 구축된 모델이 연결주의 모델링, 더 나아가 실제 사람의 언어 처리를 모사해 낼 수 있음을 제시한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this study, we propose an end-to-end SRL system that only uses morpheme information with Stacked Bidirectional LSTM-CRFs model by extending the LSTM RNN that is suitable for sequence labeling problem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>아울러서 본 연구에서는, 어떻게 deep belief network 알고리즘이 연결주의 모델링에 적용이 가능한가에 대해서도 논의하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Our experimental results show that our proposed model has better performance, as compare to other models.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>Social-aware video는 자유로운 스토리 전개를 통해 인물들간의 관계뿐만 아니라 경제, 정치, 문화 등 다양한 지식을 사람에게 전달해주고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, deep learning is used for intelligent processing and accuracy improvement of data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>특히 장소에 따른 사람들간의 대화 습성과 행동 패턴은 사회관계를 분석하는데 있어서 아주 중요한 정보이다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>It is formed calculation model composed of multi data processing layer that train the data representation through an abstraction of the various levels.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>하지만 멀티모달과 동적인 특성으로 인해 컴퓨터가 비디오로부터 자동으로 지식을 습득하기에는 아직 많은 어려움이 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A category of deep learning, convolution neural network is utilized in various research fields, which are human pose estimation, face recognition, image classification, speech recognition.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이러한 문제점들을 해결하기 위해 기존의 연구에서는 딥하이퍼넷 모델을 사용하여 드라마 등장인물의 시각과 언어 정보를 기반으로 계층적 구조를 사용해 소셜 네트워크를 분석하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>When using the deep layer and lots of class, CNN that show a good performance on image classification obtain higher classification rate but occur the overfitting problem, when using a few data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>하지만 장소 정보를 사용하지 않아 전반적인 스토리로부터 소셜 네트워크를 분석할 수밖에 없었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>So, we design the training network based on convolution neural network and trained our image data set for object classification in few class problem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 기존 연구를 바탕으로 장소 정보를 추가하여 각 장소에서의 인물 특성을 분석해 보았다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The experiment show the higher classification rate of 7.06% in average than the previous networks designed to classify the object in 1000 class problem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 총 4400분 분량의 TV드라마 “Friends”를 사용했고 C-RNN모델을 통해 등장인물을 인식하였으며 Bag of Features로 장소를 분류하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose facial expression recognition using CNN (Convolutional Neural Network), one of the deep learning technologies.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그리고 딥하이퍼넷 모델을 통해 자동으로 소셜 네트워크를 생성하였고 각 장소에서의 인물 관계 변화를 분석하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To overcome the disadvantages of existing facial expression databases, various databases are used.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>의미역 결정 연구에 있어 구문 분석 정보는 술어-논항 사이의 의존 관계를 포함하고 있기 때문에 의미역 결정 성능 향상에 큰 도움이 된다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the proposed technique, we construct six facial expression data sets such as "expressionless", "happiness", "sadness", "angry", "surprise", and "disgust".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그러나 의미역 결정 이전에 구문 분석을 수행해야 하는 비용(overhead)이 발생하게 되고, 구문 분석 단계에서 발생하는 오류를 그대로 답습하는 단점이 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Pre-processing and data augmentation techniques are also applied to improve efficient learning and classification performance.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이러한 문제점을 해결하기 위해 본 논문에서는 구문 분석 정보를 제외한 형태소 분석 정보만을 사용하는 End-to-end SRL 방식의 한국어 의미역 결정 시스템을 제안하고, 순차 데이터 모델링에 적합한 LSTM RNN을 확장한 Stacked Bidirectional LSTM-CRFs 모델을 적용해 구문 분석 정보 없이 기존 연구보다 더 높은 성능을 얻을 수 있음을 보인다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In the existing CNN structure, the optimal CNN structure that best expresses the features of six facial expressions is found by adjusting the number of feature maps of the convolutional layer and the number of fully-connected layer nodes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 데이터의 지능적 처리 및 정확도 향상을 위해 딥러닝 기술이 응용되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Experimental results show that the proposed scheme achieves the highest classification performance of 96.88% while it takes the least time to pass through the CNN structure compared to other models.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이 기술은 다층의 데이터 처리레이어들로 구성된 계산 모델을 통해 이루어지는데, 이 모델은 여러 수준의 추상화를 거쳐 데이터의 표현을 학습한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, Internet of Things (IoT) and deep learning techniques have affected video surveillance systems in various ways.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>딥러닝의 한 부류인 컨볼루션 신경망은 인간 행동 추정, 얼굴 인식, 이미지 분류, 음성 인식 같은 연구 분야에서 많이 활용되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The surveillance features that perform detection, tracking, and classification of specific objects in Closed Circuit Television (CCTV) video are becoming more intelligent.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이미지 분류에 좋은 성능을 보여주는 컨볼루션 신경망은 깊은 학습망과 많은 부류를 이용하면 효과적으로 분류율을 높일수 있지만, 적은 부류의 데이터를 사용할 경우, 과적합 문제가 발생할 확률이 높아진다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This paper presents real-time algorithm that can run in a PC environment using only a low power CPU.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>따라서 본 논문에서는 컨볼루션 신경망기반의 소부류의 분류을 위한 학습망을 제작하여 자체적으로 구축한 이미지 DB를 학습시키고, 객체를 분류하는 연구를 실험 하였으며, 1000개의 부류를 분류하기 위해 제작된 기존 공개된 망들과 비교 실험을 통해 기존 망보다 평균 7.06%이상의 상승된 분류율을 보여주었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Traditional tracking algorithms combine background modeling using the Gaussian Mixture Model (GMM), Hungarian algorithm, and a Kalman filter; they have relatively low complexity but high detection errors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 딥러닝 기술 중의 하나인 CNN(Convolutional Neural Network)을 이용한 얼굴 표정 인식 기법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To supplement this, deep learning technology was used, which can be trained from a large amounts of data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>기존의 얼굴 표정 데이터베이스의 단점을 보완하고자 질 좋은 다양한 데이터베이스를 이용한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In particular, an SRGB(Sequential RGB)-3 Layer CNN was used on tracked objects to emphasize the features of moving people.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안한 기법에서는 ‘무표정’, ‘행복’, ‘슬픔’, ‘화남’, ‘놀람’, 그리고 ‘역겨움’ 등의 여섯 가지 얼굴 표정 data-set을 구축한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Performance evaluation comparing the proposed algorithm with existing ones using HOG and SVM showed move-in and move-out error rate reductions by 7.6 % and 9.0 %, respectively.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>효율적인 학습 및 분류 성능을 향상시키기 위해서 전 처리 및 데이터 증대 기법(data augmentation)도 적용한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We analyze the online Hangul handwriting recognition problem (HHR) and present solutions based on recurrent neural networks.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>기존의 CNN 구조에서 convolutional layer의 특징지도의 수와 fullyconnected layer의 node의 수를 조정하면서 여섯 가지 얼굴 표정의 특징을 가장 잘 표현하는 최적의 CNN 구조를 찾는다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The solutions are organized according to the three kinds of sequence labeling problem - sequence classifications, segment classification, and temporal classification, with additional consideration of the structural constitution of Hangul characters.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험 결과 제안하는 구조가 다른 모델에 비해 CNN 구조를 통과하는 시간이 가장 적게 걸리면서도 96.88%의 가장 높은 분류 성능을 보이는 것을 확인하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We present a stacked gated recurrent unit (GRU) based model as the natural HHR solution in the sequence classification level.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 IoT 및 딥러닝 관련 기술요소들이 영상보안감시시스템에서도 다양하게 응용되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The proposed model shows 86.2% accuracy for recognizing 2350 Hangul characters and 98.2% accuracy for recognizing the six types of Hangul characters.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그 중 CCTV를 통해 촬영된 동영상에서 자동으로 특정 객체를 검출, 추적, 분류 하는 감시 기능이 점점 지능화되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We show that the type recognizing model successfully follows the type change as strokes are sequentially written.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 보급형 CPU만 사용하는 PC 환경에서도 실시간 처리가 가능한 알고리즘을 목표로 하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>These results show the potential for RNN models to learn high-level structural information from sequential data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>GMM(Gaussian Mixture Model)을 이용한 배경 모델링과 헝가리안 알고리즘, 그리고 칼만 필터를 조합한 추적 알고리즘은 전통적이며 복잡도가 비교적 적지만 검출 오류가 높다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we analyze the performance of the recently introduced Hint-knowledge distillation (KD) training approach based on the teacher-student framework for knowledge distillation and knowledge transfer.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이를 보강하기 위해 대용량 데이터 학습에 적합한 딥러닝을 기술을 적용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As a deep neural network (DNN) considered in this paper, the deep residual network (ResNet), which is currently regarded as the latest DNN, is used for the teacher-student framework.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>특히 움직임이 있는 사람의 특징을 강조하기 위해 추적된 객체에 대해 SRGB-3 Layer CNN을 사용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Therefore, when implementing the Hint-KD training, we investigate the impact on the weight of KD information based on the soften factor in terms of classification accuracy using the widely used open deep learning frameworks, Caffe.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>성능 평가를 위해 기존의 HOG와 SVM을 이용한 시스템과 비교했을 때 Move-in은 7.6%, Move-out은 9.0%의 오류율 감소가 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As a results, it can be seen that the recognition accuracy of the student model is improved when the fixed value of the KD information is maintained rather than the gradual decrease of the KD information during training.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>온라인 방식의 한글 필기체 인식 문제를 분석하고 순환신경망 기반의 해법을 모색한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As artificial intelligence technology emerges as a core technology of the future, intensive investment, research and development are being carried out by leading global nations and global intellectual property leaders.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>한글 낱글자 인식 문제를 순서데이터 레이블링의 관점에서 서열 분류, 구간 분류, 시간별 분류의 세 단계로 구분하여 각각에 대한 해법을 살펴보며, 한글의 구성 원리를 고려한 해결 방안을 정리한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>It is expected that artificial intelligence technology will generate direct and indirect effects in the whole country such as public, industry, and life, and it will be an important part in ensuring global competitiveness and patent strategy of countries and companies in the future.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>한글 2350글자에 대한 온라인 필기체 데이터에 GRU(gated recurrent unit)의 다층 구조를 가지는 서열 분류모델을 적용한 결과, 낱글자 인식 정확도는 86.2%, 초･중･종성 구성에 따른 6가지 유형 분류 정확도는 98.2%로 측정되었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we will examine the research directions of industry, academia, and research to develop international competitiveness through patent trends in artificial intelligence technology.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>유형 분류 모델로 획의 진행에 따른 유형 변화 역시 높은 정확도로 인식하는 결과를 통해, 순환신경망을 이용하여 순서 데이터에서 한글의 구조와 같은 고차원적 지식을 학습할 수 있음을 확인하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The emergence of online media and their data has enabled data-driven methods to solve challenging and complex tasks such as rumor classification problems.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>문서 분류 문제는 오랜 기간 동안 자연어 처리 분야에서 연구되어 왔다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, deep learning based models have been shown as one of the fastest and the most accurate algorithms to solve such problems.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>우리는 기존 컨볼루션 신경망을 이용했던 연구에서 나아가, 순환 신경망에 기반을 둔 문서 분류를 수행하였고 그 결과를 종합하여 제시하려 한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>These new models, however, either rely on complete data or several days-worth of data, limiting their applicability in real time.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>컨볼루션 신경망은 단층 컨볼루션 신경망을 사용했으며, 순환 신경망은 가장 성능이 좋다고 알려져 있는 장기-단기 기억 신경망과 회로형 순환 유닛을 활용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this study, we go beyond this limit and test the possibility of super early rumor detection via recurrent neural networks (RNNs).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>실험 결과, 분류 정확도는 Multinomial Naïve Bayesian Classifier &lt; SVM &lt; LSTM &lt; CNN &lt; GRU의 순서로 나타났다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Our model takes in social media streams as time series input, along with basic meta-information about the rumongers including the follower count and the psycholinguistic traits of rumor content itself.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>따라서 텍스트 문서 분류 문제는 시퀀스를 고려하는 것 보다는 문서의 feature를 추출하여 분류하는 문제에 가깝다는 것을 확인할 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Based on analyzing millions of social media posts on 498 real rumors and 494 non-rumor events, our RNN-based model detected rumors with only 30 initial posts (i.e., within a few hours of rumor circulation) with remarkable F1 score of 0.74.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그리고 GRU가 LSTM보다 문서의 feature 추출에 더 적합하다는 것을 알 수 있었으며 적절한 feature와 시퀀스 정보를 함께 활용할 때 가장 성능이 잘 나온다는 것을 확인할 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This finding widens the scope of new possibilities for building a fast and efficient rumor detection system.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 지식추출(knowledge distillation) 및 지식전달(knowledge transfer)을 위하여 최근에 소개된 선생-학생 프레임워크 기반의 힌트(Hint)-knowledge distillation(KD) 학습기법에 대한 성능을 분석한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In recent years, personal videos have seen a tremendous growth due to the substantial increase in the use of smart devices and networking services in which users create and share video content easily without many restrictions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서 고려하는 선생-학생 프레임워크는 현재 최신 딥러닝 모델로 각광받고 있는 딥 residual 네트워크를 이용한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, taking both into account would significantly improve event detection performance because videos generally have multiple modalities and the frame data in video varies at different time points.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>따라서, 전 세계적으로 널리 사용되고 있는 오픈 딥러닝 프레임워크인 Caffe를 이용하여 학생모델의 인식 정확도 관점에서 힌트-KD 학습 시 선생모델의 완화상수 기반의 KD 정보 비중에 대한 영향을 살펴본다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This paper proposes an event detection method.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문의 연구결과에 따르면 KD 정보 비중을 단조감소하는 경우보다 초기에 설정된 고정된 값으로 유지하는 것이 학생모델의 인식 정확도가 더 향상된다는 것을 알 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this method, high-level features are first extracted from multiple modalities in the videos, and the features are rearranged according to time sequence.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>인공지능 기술이 미래의 핵심기술로 떠오름에 따라 세계 주요국과 글로벌 지식재산 선도 기업들의 집중적인 투자와 연구개발이 이루어지고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Then the association of the modalities is learned by means of DNN to produce a personal video event detector.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>인공지능 기술은 공공, 산업, 생활 등 국가 전반에 직 · 간접적인 효과를 창출할 것으로 전망됨에 따라 향후 국가 및 기업의 글로벌 경쟁력 확보 및 특허 전략에서 중요한 부분을 차지 할 것으로 전망된다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In our proposed method, audio and image data are first synchronized and then extracted.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 인공지능 기술 분야의 특허동향을 통하여 국제적인 경쟁력을 갖추기 위한 산학연의 연구방향에 대해 살펴본다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Then, the result is input into GoogLeNet as well as Multi-Layer Perceptron (MLP) to extract high-level features.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>전자 부품의 결함 검사에서 미세한 크랙이나, 표면이 균일하지 않은 경우, 그리고 결함과 주변의 구분이 명확치 않은 조건에서는 검출자 기반의 접근이 성능의 한계를 보이고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The results are then re-arranged in time sequence, and every video is processed to extract one feature each for training by means of DNN.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>딥러닝 기법이 물체 인식에 널리 적용되고 있으며.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The machine learning is receiving attention as a new method for energy big data analysis and power demand prediction to be more effectively operating a power system.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>결함 검출에 대해서도 점차 적용이 시도되고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we study input pattern of deep learning for power demand prediction using machine learning package of R and tensorflow.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>일반적으로 딥러닝은 방대한 규모의 학습 데이터를 필요로 하나, 일부 산업응용 문제에서는 데이터의 획득이 제한적일 수 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The input pattern and learning rate in deep learning is the most important factor in power demand prediction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>검출 난이도가 높으면서 학습 데이터가 충분하지 않은 전자 부품의 표면 결함 검사에 대해서 딥러닝 접근법의 하나인 CNN을 적용하고 가능성을 검토한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, the input pattern is because humans have directly determined, must determine by repeated experiment.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>CNN 기법 외에 Otsu와 Gaussian blur 기법을 CNN에 결합하여 시도하였고, VOV 필터 기반의 데이터 재생성을 통해 데이터를 확충한 기법과 비교하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The factor of power demand prediction was used average temperature, sensible temperature, cooling degree hours, discomfort index.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이를 통해 검출 오류율을 5%까지 감소시킨 결과를 얻을 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As a result, input pattern power demand and average temperature for one week was obtained the best results about power demand prediction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 몇 년간 딥러닝(deep learning)은 음성 인식, 영상 인식, 물체 검출을 비롯한 다양한 패턴인식 분야에서 혁신적인 성능 발전을 거듭해왔다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, we were enhanced to more prediction results by adding the sensible temperature and discomfort index elements.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그에 비해 네트워크가 어떻게 작동하는지에 대한 깊은 이해는 잘 이루어지지 않고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As future research, proposed model need to build more suitable network for deep learning, and need to use of meteorological elements Big Data to improve power demand prediction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문은 효과적인 신경망 네트워크를 구성하기 위해 네트워크 파라미터들이 신경망 내부에서 어떻게 작동하고, 어떤 역할을 하고 있는지 분석하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Pedestrian detection, an important component of autonomous driving and driving assistant system, has been extensively studied for many years.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>Faster R-CNN 네트워크를 기반으로 하여 신경망의 과적합(overfitting)을 막는 드랍아웃(dropout) 확률과 앵커 박스 크기, 그리고 활성 함수를 변화시켜 학습한 후 그 결과를 분석하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In particular, image based pedestrian detection methods such as Hierarchical classifier or HOG and, deep models such as ConvNet are well studied.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한 드랍아웃과 배치 정규화(batch normalization) 방식을 비교해보았다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The evaluation score has increased by the various methods.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>드랍아웃 확률은 0.3일 때 가장 좋은 성능을 보였으며 앵커 박스의 크기는 최종 물체 검출 성능과 큰 관련이 없다는 것을 알 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>However, pedestrian detection requires high sensitivity to errors, since small error can lead to life or death problems.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>드랍아웃과 배치 정규화 방식은 서로를 완전히 대체할 수는 없는 것을 확인할 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Consequently, further reduction in pedestrian detection error rate of autonomous systems is required.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>활성화 함수는 음수 도메인의 기울기가 0.02인 leaky ReLU가 비교적 좋은 성능을 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We proposed a new method to detect pedestrians and reduce the error rate by using the Faster R-CNN with new developed pedestrian training data sets.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>온라인 소셜미디어의 등장으로 방대한 사용자 데이터가 수집되고 이는 루머의 탐지와 같은 복잡하고 도전적인 사회 문제를 자료 기반 기법으로 해결할 수 있게끔 한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Finally, we compared the proposed method with the previous models, in order to show the improvement of our method.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 딥러닝 기반 모델들이 이러한 문제를 해결하기 위한 빠르고 정확한 기법 중의 하나로서 소개되었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, the copy mechanism and input feeding are applied to recurrent neural network(RNN)-search model in a Korean-document summarization in an end-to-end manner.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>하지만 기존에 제시된 모델들은 전파 종료 후 작동하거나 오랜 관찰기간을 필요로 하여 활용성이 제한된다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, the performances of the document summarizations are compared according to the model and the tokenization format; accordingly, the syllable-unit, morpheme-unit, and hybrid-unit tokenization formats are compared.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이 연구에서는 초기 소량데이터만을 활용하는 recurrent neural networks (RNNs) 기반의 빠른 루머 분류 알고리즘을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For the experiments, Internet newspaper articles were collected to construct a Korean-document summary data set (train set: 30291 documents; development set: 3786 documents; test set: 3705 documents).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제시된 모델은 소셜미디어 스트림을 시계열 자료로 변환하여 사용하며, 이 때 시계열 데이터는 팔로워 수와 같이 정보 전파자 관련 정보는 물론 주어진 컨텐츠에서 추론한 언어심리학적 감성의 점수로 구성된다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>When the format was tokenized as the morpheme-unit, the models with the input feeding and the copy mechanism showed the highest performances of ROUGE-1 35.92, ROUGE-215.37, and ROUGE-L 29.45.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>수백만의 트윗을 포함하는 498개의 실제 루머 및 494개의 비루머 사례 분석을 통해 이 연구는 제안하는 RNN 기반 모델이 초기 30개의 트윗 만으로도 (초기 수시간) 0.74 F1의 높은 성능을 보임을 확인한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As a 360-degree image carries information of all directions, it often has too much information.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>이러한 결과는 실제 응용가능한 수준의 빠르고 효율적인 루머 분류 알고리즘 개발의 초석이 된다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Moreover, in order to investigate a 360-degree image on a 2D display, a user has to either click and drag the image with a mouse, or project it to a 2D panorama image, which inevitably introduces severe distortions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>최근 스마트 기기의 보급으로 자유롭게 비디오 컨텐츠를 생성하고 이를 빠르고 편리하게 공유할 수 있는 네트워크 환경이 갖추어지면서, 퍼스널 비디오가 급증하고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In consequence, investigating a 360-degree image and finding an object of interest in such a 360-degree image could be a tedious task.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그러나, 퍼스널 비디오는 비디오라는 특성 상 멀티 모달리티로 구성되어 있으면서 데이터가 시간의 흐름에 따라 변화하기 때문에 이벤트 분류를 할 때 이에 대한 고려가 필요하다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>To resolve this issue, this paper proposes a method to find a region of interest and produces a 2D naturally looking image from a given 360-degree image that best matches a description given by a user in a natural language sentence.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문에서는 비디오 내의 멀티 모달리티들로부터 고수준의 특징을 추출하여 시간 순으로 재배열한 것을 바탕으로 모달리티 사이의 연관관계를 Deep Neural Network(DNN)으로 학습하여 퍼스널 비디오 이벤트를 분류하는 방법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Our method also considers photo composition so that the resulting image is aesthetically pleasing.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>제안하는 방법은 비디오에 내포된 이미지와 오디오를 시간적으로 동기화하여 추출한 후 GoogLeNet과 Multi-Layer Perceptron(MLP)을 이용하여 각각 고수준 정보를 추출한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Our method first converts a 360-degree image to a 2D cubemap.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그리고 이들을 비디오에 표현된 시간순으로 재 배열하여 비디오 한 편당하나의 특징으로 재 생성하고 이를 바탕으로 학습한 DNN을 이용하여 퍼스널 비디오 이벤트를 분류한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As objects in a 360-degree image may appear distorted or split into multiple pieces in a typical cubemap, leading to failure of detection of such objects, we introduce a modified cubemap.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>기계학습은 전력계통을 효율적으로 운영할 수 있도록, 에너지 빅 데이터 분석과 전력수요예측을 위한 방법으로 관심을 받고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Then our method applies a Long Short Term Memory (LSTM) network based object detection method to find a region of interest with a given natural language sentence.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>본 논문은 R과 텐서플로우의 기계학습 패키지를 이용하여, 전력수요예측을 위한 딥러닝 입력패턴에 대해서 연구하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Finally, our method produces an image that contains the detected region, and also has aesthetically pleasing composition.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>딥 러닝에서 입력패턴과 학습률은 전력수요예측에서 가장 중요한 요소이지만 인간이 직접 결정해야하기 때문에, 반복적인 실험에 의해 결정해야한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Deep learning which is a subfield of machine learning began to be used in music genre classification in recent years.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>전력수요 예측요소는 당일 전력수요와 상관관계가 있는 평균온도, 체감온도, 불쾌지수를 이용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we propose a model that can utilize the multimodal deep learning architecture in the music genre classification problem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>결과로서, 일주일간 전력수요와 평균온도 데이터 입력패턴이 전력수요예측에서 가장 좋은 결과를 나타냈다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>CNN(Convolutional Neural Network) was used for the spectrogram image of music and RNN(Recurrent Neural Network) was used for the sequential data of the sound.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한, 체감온도, 불쾌지수 등의 예측요소를 추가함으로서 좀 더 예측결과를 향상시킬 수 있었다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In addition, dropout which is a representative regularizer was applied to prevent overfitting.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>향후 연구과제로서 제안 모델은 전력수요예측 향상을 위해 기상 요소 빅 데이터를 이용하고, 보다 적합한 딥 러닝 네트워크 구축이 필요하다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The model using multimodal deep learning proposed in this study was found to be more effective than unimodal deep learning for music genre classification.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>보행자 검출은 수년간 광범위하게 연구된 문제이며, 자율주행 자동차와 운전자 보조시스템에서 매우 중요한 역할을 차지하고 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>For accurate precipitation forecasts the choice of weather faoctrs and prediction method is very important.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>특히, 계층적 분류기[1]와 Histogram of Gradient[2]특징벡터 등 영상 기반의 보행자 검출기법과 ConvNet같이 deep model을 이용하여 검출하는 기법들이 연구되었고 검출성능 은 꾸준히 상승하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recently, machinele arning has been widely used for forecasting precipitation, and artificial neural network, one of machine learning techniques, showed good performance.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>하지만 보행자 검출은 작은 오차에도 생명과 연관된 문제를 야기할 수 있기 때문에, 자율주행 시스템의 보행자검출 오차율은 더욱 낮출 필요가 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>In this paper, we suggest a new method for forecasting precipitation using DBN, one of deep learning techniques.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>따라서 본 연구에서는 Faster R-CNN 응용 기법에 새로 개발한 데이터 학습 모델을 적용하여 보행자 검출 오류를 줄이는 기법을 제안한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>DBN has an advantage that initial weights are set by unsupervised learning, so this compensates for the defects of artificial neural networks.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>그리고 기존에 제안된 모델들과 비교를 통해, 보행자 검출에 있어 제안된 방법의 우수성을 보이고자 한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>We used past precipitation, temperature, and the parameters of the sun and moon"s motion as features for forecasting precipitation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>논문에서는 copy mechanism과 input feeding 추가한 RNN search 모델을 end-to-end 방식으로 한국어 문서요약에 적용하였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The dataset consists of observation data which had been measured for 40 years from AWS in Seoul.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한 시스템의 입출력으로 사용하는 데이터를 음절단위, 형태소단위, hybrid 단위의 토큰화 형식으로 처리하여 수행한 각각의 성능을 구하여, 모델과 토큰화 형식에 따른 문서요약 성능을 비교한다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Experiments were based on 8-fold cross validation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>인터넷 신문기사를 수집하여 구축한 한국어 문서요약 데이터 셋(train set 30291 문서, development set 3786 문서, test set 3705문서)으로 실험한 결과, 형태소 단위로 토큰화 하였을 때 우수한 성능을 확인하였으며, GRU search에 input feeding과 copy mechanism을 추가한 모델이 ROUGE-1 35.92, ROUGE-2 15.37, ROUGE-L 29.45로 가장 높은 성능을 보였다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>As a result of estimation, we got probabilities of test dataset, so threshold was used for the decision of precipitation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>360 영상은 상하좌우 모든 영역에 대한 정보를 갖고 있기 때문에 종종 지나치게 많은 정보를 포함하게 된다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>CSI and Bias were used for indicating the precision of precipitation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="ko">
+        <seg>또한 360 영상의 내용을 2D 모니터를 이용하여 확인하기 위해서는 마우스를 이용하여 360 영상을 돌려 봐야 하거나, 또는 심하게 왜곡된 2D 영상으로 변환해서 봐야 하는 문제가 있다.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Our experimental results showed that DBN performed better than MLP.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

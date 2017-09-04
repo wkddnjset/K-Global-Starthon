@@ -28,7 +28,7 @@ showpageno = True
 laparams = LAParams() 
  
 fpname = askopenfilename() 
-fp = file('../../resources/thesis/Deep Learning for Visual Recognition.pdf', 'rb') 
+fp = file('../../resources/thesis/medical.pdf', 'rb')
  
 outfpname = 'pdf2output' 
  
@@ -45,20 +45,5 @@ for page in PDFPage.get_pages(fp, pagenos,
     interpreter.process_page(page) 
      
 outfp.close() 
- 
-rsrcmgr = PDFResourceManager(caching=caching) 
-outfp = file(outfpname + '.html', 'w') 
-device = HTMLConverter(rsrcmgr, outfp, codec=codec, scale=scale, 
-                       layoutmode=layoutmode, laparams=laparams, 
-                       imagewriter=imagewriter) 
- 
-interpreter = PDFPageInterpreter(rsrcmgr, device) 
-for page in PDFPage.get_pages(fp, pagenos, 
-                              maxpages=maxpages, password=password, 
-                              caching=caching, check_extractable=True): 
-    page.rotate = (page.rotate+rotation) % 360 
-    interpreter.process_page(page) 
-     
-outfp.close() 
- 
+
 fp.close()

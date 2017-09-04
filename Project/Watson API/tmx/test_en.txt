@@ -1,0 +1,470 @@
+﻿
+Deep learning which is a subfield of machine learning began to be used in music genre classification in recent years.
+
+In this paper, we propose a model that can utilize the multimodal deep learning architecture in the music genre classification problem.
+
+CNN(Convolutional Neural Network) was used for the spectrogram image of music and RNN(Recurrent Neural Network) was used for the sequential data of the sound.
+
+In addition, dropout which is a representative regularizer was applied to prevent overfitting.
+
+The model using multimodal deep learning proposed in this study was found to be more effective than unimodal deep learning for music genre classification.
+
+For accurate precipitation forecasts the choice of weather faoctrs and prediction method is very important.
+
+Recently, machinele arning has been widely used for forecasting precipitation, and artificial neural network, one of machine learning techniques, showed good performance.
+
+In this paper, we suggest a new method for forecasting precipitation using DBN, one of deep learning techniques.
+
+DBN has an advantage that initial weights are set by unsupervised learning, so this compensates for the defects of artificial neural networks.
+
+We used past precipitation, temperature, and the parameters of the sun and moon"s motion as features for forecasting precipitation.
+
+The dataset consists of observation data which had been measured for 40 years from AWS in Seoul.
+
+Experiments were based on 8-fold cross validation.
+
+As a result of estimation, we got probabilities of test dataset, so threshold was used for the decision of precipitation.
+
+CSI and Bias were used for indicating the precision of precipitation.
+
+Our experimental results showed that DBN performed better than MLP.
+
+Recently, a number of techniques to ensure the free walking for the visually impaired and transportation vulnerable have been studied.
+
+As a device for free walking, there are such as a smart cane and smart glasses to use the computer vision, ultrasonic sensor, acceleration sensor technology.
+
+In a typical technique, such as techniques for finds object and detect obstacles and walking area and recognizes the symbol information for notice environment information.
+
+In this paper, we studied recognization algorithm of the selected symbols that are required to visually impaired, with the deep learning algorithm.
+
+As a results, Use CNN(Convolutional Nueral Network) technique used in the field of deep-learning image processing, and analyzed by comparing through experimentation with various deep learning architectures.
+
+Deep learning model is a kind of neural networks that allows multiple hidden layers.
+
+There are various deep learning architectures such as convolutional neural networks, deep belief networks and recurrent neural networks.
+
+Those have been applied to fields like computer vision, automatic speech recognition, natural language processing, audio recognition and bioinformatics where they have been shown to produce state-of-the-art results on various tasks.
+
+Among those architectures, convolutional neural networks and recurrent neural networks are classified as the supervised learning model.
+
+And in recent years, those supervised learning models have gained more popularity than unsupervised learning models such as deep belief networks, because supervised learning models have shown fashionable applications in such fields mentioned above.
+
+Steganalysis is to detect information hidden by steganography inside general data such as images.
+
+There are stegoanalysis techniques that use machine learning (ML).
+
+Existing ML approaches to steganalysis are based on extracting features from stego images and modeling them.
+
+Recently deep learning-based methodologies have shown significant improvements in detection accuracy.
+
+However, all the existing methods, including deep learning-based ones, have a critical limitation in that they can only detect stego images that are created by a specific steganography method.
+
+In this paper, we propose a generalized steganalysis method that can model multiple types of stego images using deep learning.
+
+Through various experiments, we confirm the effectiveness of our approach and envision directions for future research.
+
+In particular, we show that our method can detect each type of steganography with the same level of accuracy as that of a steganalysis method dedicated to that type of steganography, thereby demonstrating the general applicability of our approach to multiple types of stego images.
+
+This paper presents an attempt to apply Deep Learning technology to solve the problem of forecasting floods in urban areas.
+
+We employ Recurrent Neural Networks (RNNs), which are suitable for analyzing time series data, to learn observed data of river water and to predict the water level.
+
+To test the model, we use water observation data of a station in the Trinity River, Texas, the U.S., with data from 2013 to 2015 for training and data in 2016 for testing.
+
+Input of the neural networks is a 16-record-length sequence of 15-minute-interval time-series data, and output is the predicted value of the water level at the next 30 minutes and 60 minutes.
+
+In the experiment, we compare three Deep Learning models including standard RNN, RNN trained with Back Propagation Through Time(RNN-BPTT), and Long Short-Term Memory (LSTM).
+
+The prediction quality of LSTM can obtain Nash Efficiency exceeding 0.98, while the standard RNN and RNN-BPTT also provide very high accuracy.
+
+Horizon correction is a crucial stage for image composition enhancement.
+
+In this paper, we propose a deep learning based method for estimating the slanted angle of a photograph and correcting it.
+
+To estimate and correct the horizon direction, existing methods use hand-crafted low-level features such as lines, planes, and gradient distributions.
+
+However, these methods may not work well on the images that contain no lines or planes.
+
+To tackle this limitation and robustly estimate the slanted angle, we propose a convolutional neural network (CNN) based method to estimate the slanted angle by learning more generic features using a huge dataset.
+
+In addition, we utilize multiple adaptive spatial pooling layers to extract multi-scale image features for better performance.
+
+In the experimental results, we show our CNN-based approach robustly and accurately estimates the slanted angle of an image regardless of the image content, even if the image contains no lines or planes at all.
+
+This paper proposes a novel aesthetic photo recomposition method using a deep convolutional neural network (DCNN).
+
+Previous recomposition approaches define the aesthetic score of photo composition based on the distribution of salient objects, and enhance the photo composition by maximizing the score.
+
+These methods suffer from heavy computational overheads, and often fail to enhance the composition because their optimization depends on the performance of existing salient object detection algorithms.
+
+Unlike previous approaches, we address the photo recomposition problem by utilizing DCNN, which shows remarkable performance in object detection and recognition.
+
+DCNN is used to iteratively predict cropping directions for a given photo, thus generating an aesthetically enhanced photo in terms of composition.
+
+Experimental results and user study show that the proposed framework can automatically crop the photo to follow specific composition guidelines, such as the rule of thirds.
+
+Malware, including ransomware to quickly detect, in this study, to provide an analysis method of malicious code through the image analysis that has been learned in the deep learning of artificial intelligence.
+
+First, to analyze the 2,400 malware data, and learning in artificial neural network Convolutional neural network and to image data.
+
+Extracts subgraphs to convert the graph of abstracted image, summarizes the set represent malware.
+
+The experimentally analyzed the malware is not how similar.
+
+Using deep learning of artificial intelligence by classifying malware and It shows the possibility of accurate malware detection
+
+This paper proposes a deep learning algorithm based sign detection and recognition system for the blind.
+
+The proposed system is composed of sign detection stage and sign recognition stage.
+
+In the sign detection stage, aggregated channel features are extracted and AdaBoost classifier is applied to detect regions of interest of the sign.
+
+In the sign recognition stage, convolutional neural network is applied to recognize the regions of interest of the sign.
+
+In this paper, the AdaBoost classifier is designed to decrease the number of undetected signs, and deep learning algorithm is used to increase recognition accuracy and which leads to removing false positives which occur in the sign detection stage.
+
+Based on our experiments, proposed method efficiently decreases the number of false positives compared with other methods.
+
+Recently, deep learning encoder-based approach has been actively applied in the field of sentiment classification.
+
+However, Long Short-Term Memory network deep learning encoder, the commonly used architecture, lacks the quality of vector representation when the length of the documents is prolonged.
+
+In this study, for effective classification of the sentiment documents, we suggest the use of attention method-based deep learning encoder that generates document vector representation by weighted sum of the outputs of Long Short-Term Memory network based on importance.
+
+In addition, we propose methods to modify the attention method-based deep learning encoder to suit the sentiment classification field, which consist of a part that is to applied to window attention method and an attention weight adjustment part.
+
+In the window attention method part, the weights are obtained in the window units to effectively recognize feeling features that consist of more than one word.
+
+In the attention weight adjustment part, the learned weights are smoothened.
+
+Experimental results revealed that the performance of the proposed method outperformed Long Short-Term Memory network encoder, showing 89.67% in accuracy criteria.
+
+Recently, the wide spread of IoT (Internet of Things) based technology enables the accumulation of big biometric data on livestock.
+
+The availability of big data allows the application of diverse machine learning based algorithm in the field of agriculture, which significantly enhances the productivity of farms.
+
+In this paper, we propose an abnormal livestock detection algorithm based on deep learning, which is the one of the most prominent machine learning algorithm.
+
+In our proposed scheme, the livestock are divided into two clusters which are normal and abnormal (disease) whose biometric data has different characteristics.
+
+Then a deep neural network is used to classify these two clusters based on the biometric data.
+
+By using our proposed scheme, the normal and abnormal livestock can be identified based on big biometric data, even though the detailed stochastic characteristics of biometric data are unknown, which is beneficial to prevent epidemic such as mouth-and-foot disease.
+
+Recently, many embedded devices that have the computing capability required for deep learning have become available; hence, many new applications using these devices are emerging.
+
+However, these embedded devices have an architecture different from that of PCs and highperformance servers.
+
+In this paper, we propose a method that improves the performance of deep-learning framework by considering the architecture of an embedded device that shares memory between the CPU and the GPU.
+
+The proposed method is implemented in Caffe, an open-source deep-learning framework, and is evaluated on an NVIDIA Jetson TK1 embedded device.
+
+In the experiment, we investigate the image recognition performance of several state-of-the-art deeplearning networks, including AlexNet, VGGNet, and GoogLeNet.
+
+Our results show that the proposed method can achieve significant performance gain.
+
+For instance, in AlexNet, we could reduce image recognition latency by about 33% and energy consumption by about 50%.
+
+In this paper, we provide an authentication technology for verifying dynamic signature made by finger on smart phone.
+
+In the proposed method, we are using the Auto-Encoder-based 1 class model in order to effectively distinguish skilled forgery signature.
+
+In addition to the basic dynamic signature characteristic information such as appearance and velocity of a signature, we use accelerometer value supported by most of the smartphone.
+
+Signed data is re-sampled to give the same length and is normalized to a constant size.
+
+We built a test set for evaluation and conducted experiment in three ways.
+
+As results of the experiment, the proposed acceleration sensor value and 1 class model shows 6.9% less EER than previous method.
+
+In this paper, we propose a new automatic modulation classification method based on deep neural networks (DNN).
+
+The proposed method uses nineteen statistical features extracted from the received signal samples as an input to the fully connected neural networks with the four layers.
+
+The deep neural network is trained with the number of 30,000 training data generated by computer simulations.
+
+Various signal to noise ratios and fading channel conditions are considered for generation of the training data.
+
+The experimental results show that the proposed modulation classification technique outperforms the existing methods both in additive white Gaussian noise(AWGN) and Rician fading channels.
+
+Recently deep learning outstands because of big data, prevention of over-fitting and improvement of hardware.
+
+One of them an CNN(Convolutional Neural Networks) is available to robot environment because it achieves some degree of shift, deformation and scale invariance.
+
+In this paper, we experiment video-based face recognition using 3D CNN on the ETRI face video.
+
+Training data is 50pictures captured from 1m away, and checking data are 50, 200, 100 pictures captured from 1m, 2m, 3m away and The rates of true recognition are 100%, 88% and 73% as maximum by varying the number of feature maps.
+
+This paper is a study to improve the classification efficiency of rotating objects by using deep neural networks to which a deep learning algorithm was applied.
+
+For the classification experiment of rotating objects, COIL-20 is used as data and total 3 types of classifiers are compared and analyzed.
+
+3 types of classifiers used in the study include PCA classifier to derive a feature value while reducing the dimension of data by using Principal Component Analysis and classify by using euclidean distance, MLP classifier of the way of reducing the error energy by using error back-propagation algorithm and finally, deep learning applied DBN classifier of the way of increasing the probability of observing learning data through pre-training and reducing the error energy through fine-tuning.
+
+In order to identify the structure-specific error rate of the deep neural networks, the experiment is carried out while changing the number of hidden layers and number of hidden neurons.
+
+The classifier using DBN showed the lowest error rate.
+
+Its structure of deep neural networks with 2 hidden layers showed a high recognition rate by moving parameters to a location helpful for recognition.
+
+While the Internet develops rapidly, a huge amount of image data collected from smart phones, digital cameras and black boxes are being shared through social media sites.
+
+Generally, social images are handled by tagging them with information.
+
+Due to the ease of sharing multimedia and the explosive increase in the amount of tag information, it may be considered too much hassle by some users to put the tags on images.
+
+Image retrieval is likely to be less accurate when tags are absent or mislabeled.
+
+In this paper, we suggest a method of extracting tags from social images by using image content.
+
+In this method, CNN(Convolutional Neural Network) is trained using ImageNet images with labels in the training set, and it extracts labels from instagram images.
+
+We use the extracted labels for automatic image tagging.
+
+The experimental results show that the accuracy is higher than that of instagram retrievals.
+
+In this paper, we proposed an image analysis bot system with a method of pedestrian detection based on deep learning algorithm.
+
+First, the convolutional neural network, the algorithm most widely used for image analysis technology, was applied to object classifier generation technique.
+
+Second, we used it to implement an image analysis bot system.
+
+We designed some base solutions such as intrusion detection solution, access detection solution and behavior detection solution for image analysis system.
+
+In the experiments, we compared our method with SIFT and HOG.
+
+Through the experimental results, we proved that our method takes advantage of the accuracy.
+
+The recurrent neural network (RNN) is a deep learning model which is suitable to sequential or length-variable data.
+
+The Long Short-Term Memory (LSTM) mitigates the vanishing gradient problem of RNNs so that LSTM can maintain the long-term dependency among the constituents of the given input sequence.
+
+In this paper, we propose a LSTM based language model which can predict following words of a given incomplete sentence to generate a complete sentence.
+
+To evaluate our method, we trained our model using multiple Korean corpora then generated the incomplete part of Korean sentences.
+
+The result shows that our language model was able to generate the fluent Korean sentences.
+
+We also show that the word based model generated better sentences compared to the other settings.
+
+Nowadays, computer science has recently been introduced and used deep learning algorithms in the field of pattern recognition.
+
+However, those deep learning algorithm has not been utilized in the field of connectionist modeling of language process which has used pattern recognization algorithms for computational perspective yet.
+
+In this study, we made a modeling which use the deep belief network which is a type of deep learning algorithm, and train the relation between words and semantic.
+
+After training, the model conducted the lexical decision task for model, and the results were statistically verified that it is similar with result of behavioral experiment with frequency effect as center.
+
+As the results of this study, the model showed that model was able to conduct language process through drawing the frequency effect.
+
+This result suggested that the model which used deep learning algorithm is able to be used as connectionist modeling, and to simulate the language process of human.
+
+In addition, in this study, we discussed how deep belief network can be applied to the connectionist modeling.
+
+Social-aware video displays not only the relationships between characters but also diverse information on topics such as economics, politics and culture as a story unfolds.
+
+Particularly, the speaking habits and behavioral patterns of people in different situations are very important for the analysis of social relationships.
+
+However, when dealing with this dynamic multi-modal data, it is difficult for a computer to analyze the drama data effectively.
+
+To solve this problem, previous studies employed the deep concept hierarchy (DCH) model to automatically construct and analyze social networks in a TV drama.
+
+Nevertheless, since location knowledge was not included, they can only analyze the social network as a whole in stories.
+
+In this research, we include location knowledge and analyze the social relations in different locations.
+
+We adopt data from approximately 4400 minutes of a TV drama Friends as our dataset.
+
+We process face recognition on the characters by using a convolutional- recursive neural networks model and utilize a bag of features model to classify scenes.
+
+Then, in different scenes, we establish the social network between the characters by using a deep concept hierarchy model and analyze the change in the social network while the stories unfold.
+
+Syntactic information represents the dependency relation between predicates and arguments, and it is helpful for improving the performance of Semantic Role Labeling systems.
+
+However, syntax analysis can cause computational overhead and inherit incorrect syntactic information.
+
+To solve this problem, we exclude syntactic information and use only morpheme information to construct Semantic Role Labeling systems.
+
+In this study, we propose an end-to-end SRL system that only uses morpheme information with Stacked Bidirectional LSTM-CRFs model by extending the LSTM RNN that is suitable for sequence labeling problem.
+
+Our experimental results show that our proposed model has better performance, as compare to other models.
+
+Recently, deep learning is used for intelligent processing and accuracy improvement of data.
+
+It is formed calculation model composed of multi data processing layer that train the data representation through an abstraction of the various levels.
+
+A category of deep learning, convolution neural network is utilized in various research fields, which are human pose estimation, face recognition, image classification, speech recognition.
+
+When using the deep layer and lots of class, CNN that show a good performance on image classification obtain higher classification rate but occur the overfitting problem, when using a few data.
+
+So, we design the training network based on convolution neural network and trained our image data set for object classification in few class problem.
+
+The experiment show the higher classification rate of 7.06% in average than the previous networks designed to classify the object in 1000 class problem.
+
+In this paper, we propose facial expression recognition using CNN (Convolutional Neural Network), one of the deep learning technologies.
+
+To overcome the disadvantages of existing facial expression databases, various databases are used.
+
+In the proposed technique, we construct six facial expression data sets such as "expressionless", "happiness", "sadness", "angry", "surprise", and "disgust".
+
+Pre-processing and data augmentation techniques are also applied to improve efficient learning and classification performance.
+
+In the existing CNN structure, the optimal CNN structure that best expresses the features of six facial expressions is found by adjusting the number of feature maps of the convolutional layer and the number of fully-connected layer nodes.
+
+Experimental results show that the proposed scheme achieves the highest classification performance of 96.88% while it takes the least time to pass through the CNN structure compared to other models.
+
+Recently, Internet of Things (IoT) and deep learning techniques have affected video surveillance systems in various ways.
+
+The surveillance features that perform detection, tracking, and classification of specific objects in Closed Circuit Television (CCTV) video are becoming more intelligent.
+
+This paper presents real-time algorithm that can run in a PC environment using only a low power CPU.
+
+Traditional tracking algorithms combine background modeling using the Gaussian Mixture Model (GMM), Hungarian algorithm, and a Kalman filter; they have relatively low complexity but high detection errors.
+
+To supplement this, deep learning technology was used, which can be trained from a large amounts of data.
+
+In particular, an SRGB(Sequential RGB)-3 Layer CNN was used on tracked objects to emphasize the features of moving people.
+
+Performance evaluation comparing the proposed algorithm with existing ones using HOG and SVM showed move-in and move-out error rate reductions by 7.6 % and 9.0 %, respectively.
+
+We analyze the online Hangul handwriting recognition problem (HHR) and present solutions based on recurrent neural networks.
+
+The solutions are organized according to the three kinds of sequence labeling problem - sequence classifications, segment classification, and temporal classification, with additional consideration of the structural constitution of Hangul characters.
+
+We present a stacked gated recurrent unit (GRU) based model as the natural HHR solution in the sequence classification level.
+
+The proposed model shows 86.2% accuracy for recognizing 2350 Hangul characters and 98.2% accuracy for recognizing the six types of Hangul characters.
+
+We show that the type recognizing model successfully follows the type change as strokes are sequentially written.
+
+These results show the potential for RNN models to learn high-level structural information from sequential data.
+
+In this paper, we analyze the performance of the recently introduced Hint-knowledge distillation (KD) training approach based on the teacher-student framework for knowledge distillation and knowledge transfer.
+
+As a deep neural network (DNN) considered in this paper, the deep residual network (ResNet), which is currently regarded as the latest DNN, is used for the teacher-student framework.
+
+Therefore, when implementing the Hint-KD training, we investigate the impact on the weight of KD information based on the soften factor in terms of classification accuracy using the widely used open deep learning frameworks, Caffe.
+
+As a results, it can be seen that the recognition accuracy of the student model is improved when the fixed value of the KD information is maintained rather than the gradual decrease of the KD information during training.
+
+As artificial intelligence technology emerges as a core technology of the future, intensive investment, research and development are being carried out by leading global nations and global intellectual property leaders.
+
+It is expected that artificial intelligence technology will generate direct and indirect effects in the whole country such as public, industry, and life, and it will be an important part in ensuring global competitiveness and patent strategy of countries and companies in the future.
+
+In this paper, we will examine the research directions of industry, academia, and research to develop international competitiveness through patent trends in artificial intelligence technology.
+
+The emergence of online media and their data has enabled data-driven methods to solve challenging and complex tasks such as rumor classification problems.
+
+Recently, deep learning based models have been shown as one of the fastest and the most accurate algorithms to solve such problems.
+
+These new models, however, either rely on complete data or several days-worth of data, limiting their applicability in real time.
+
+In this study, we go beyond this limit and test the possibility of super early rumor detection via recurrent neural networks (RNNs).
+
+Our model takes in social media streams as time series input, along with basic meta-information about the rumongers including the follower count and the psycholinguistic traits of rumor content itself.
+
+Based on analyzing millions of social media posts on 498 real rumors and 494 non-rumor events, our RNN-based model detected rumors with only 30 initial posts (i.e., within a few hours of rumor circulation) with remarkable F1 score of 0.74.
+
+This finding widens the scope of new possibilities for building a fast and efficient rumor detection system.
+
+In recent years, personal videos have seen a tremendous growth due to the substantial increase in the use of smart devices and networking services in which users create and share video content easily without many restrictions.
+
+However, taking both into account would significantly improve event detection performance because videos generally have multiple modalities and the frame data in video varies at different time points.
+
+This paper proposes an event detection method.
+
+In this method, high-level features are first extracted from multiple modalities in the videos, and the features are rearranged according to time sequence.
+
+Then the association of the modalities is learned by means of DNN to produce a personal video event detector.
+
+In our proposed method, audio and image data are first synchronized and then extracted.
+
+Then, the result is input into GoogLeNet as well as Multi-Layer Perceptron (MLP) to extract high-level features.
+
+The results are then re-arranged in time sequence, and every video is processed to extract one feature each for training by means of DNN.
+
+The machine learning is receiving attention as a new method for energy big data analysis and power demand prediction to be more effectively operating a power system.
+
+In this paper, we study input pattern of deep learning for power demand prediction using machine learning package of R and tensorflow.
+
+The input pattern and learning rate in deep learning is the most important factor in power demand prediction.
+
+However, the input pattern is because humans have directly determined, must determine by repeated experiment.
+
+The factor of power demand prediction was used average temperature, sensible temperature, cooling degree hours, discomfort index.
+
+As a result, input pattern power demand and average temperature for one week was obtained the best results about power demand prediction.
+
+In addition, we were enhanced to more prediction results by adding the sensible temperature and discomfort index elements.
+
+As future research, proposed model need to build more suitable network for deep learning, and need to use of meteorological elements Big Data to improve power demand prediction
+
+Pedestrian detection, an important component of autonomous driving and driving assistant system, has been extensively studied for many years.
+
+In particular, image based pedestrian detection methods such as Hierarchical classifier or HOG and, deep models such as ConvNet are well studied.
+
+The evaluation score has increased by the various methods.
+
+However, pedestrian detection requires high sensitivity to errors, since small error can lead to life or death problems.
+
+Consequently, further reduction in pedestrian detection error rate of autonomous systems is required.
+
+We proposed a new method to detect pedestrians and reduce the error rate by using the Faster R-CNN with new developed pedestrian training data sets.
+
+Finally, we compared the proposed method with the previous models, in order to show the improvement of our method.
+
+In this paper, the copy mechanism and input feeding are applied to recurrent neural network(RNN)-search model in a Korean-document summarization in an end-to-end manner.
+
+In addition, the performances of the document summarizations are compared according to the model and the tokenization format; accordingly, the syllable-unit, morpheme-unit, and hybrid-unit tokenization formats are compared.
+
+For the experiments, Internet newspaper articles were collected to construct a Korean-document summary data set (train set: 30291 documents; development set: 3786 documents; test set: 3705 documents).
+
+When the format was tokenized as the morpheme-unit, the models with the input feeding and the copy mechanism showed the highest performances of ROUGE-1 35.92, ROUGE-215.37, and ROUGE-L 29.45.
+
+As a 360-degree image carries information of all directions, it often has too much information.
+
+Moreover, in order to investigate a 360-degree image on a 2D display, a user has to either click and drag the image with a mouse, or project it to a 2D panorama image, which inevitably introduces severe distortions.
+
+In consequence, investigating a 360-degree image and finding an object of interest in such a 360-degree image could be a tedious task.
+
+To resolve this issue, this paper proposes a method to find a region of interest and produces a 2D naturally looking image from a given 360-degree image that best matches a description given by a user in a natural language sentence.
+
+Our method also considers photo composition so that the resulting image is aesthetically pleasing.
+
+Our method first converts a 360-degree image to a 2D cubemap.
+
+As objects in a 360-degree image may appear distorted or split into multiple pieces in a typical cubemap, leading to failure of detection of such objects, we introduce a modified cubemap.
+
+Then our method applies a Long Short Term Memory (LSTM) network based object detection method to find a region of interest with a given natural language sentence.
+
+Finally, our method produces an image that contains the detected region, and also has aesthetically pleasing composition.
+
+Deep learning which is a subfield of machine learning began to be used in music genre classification in recent years.
+
+In this paper, we propose a model that can utilize the multimodal deep learning architecture in the music genre classification problem.
+
+CNN(Convolutional Neural Network) was used for the spectrogram image of music and RNN(Recurrent Neural Network) was used for the sequential data of the sound.
+
+In addition, dropout which is a representative regularizer was applied to prevent overfitting.
+
+The model using multimodal deep learning proposed in this study was found to be more effective than unimodal deep learning for music genre classification.
+
+For accurate precipitation forecasts the choice of weather faoctrs and prediction method is very important.
+
+Recently, machinele arning has been widely used for forecasting precipitation, and artificial neural network, one of machine learning techniques, showed good performance.
+
+In this paper, we suggest a new method for forecasting precipitation using DBN, one of deep learning techniques.
+
+DBN has an advantage that initial weights are set by unsupervised learning, so this compensates for the defects of artificial neural networks.
+
+We used past precipitation, temperature, and the parameters of the sun and moon"s motion as features for forecasting precipitation.
+
+The dataset consists of observation data which had been measured for 40 years from AWS in Seoul.
+
+Experiments were based on 8-fold cross validation.
+
+As a result of estimation, we got probabilities of test dataset, so threshold was used for the decision of precipitation.
+
+CSI and Bias were used for indicating the precision of precipitation.
+
+Our experimental results showed that DBN performed better than MLP.

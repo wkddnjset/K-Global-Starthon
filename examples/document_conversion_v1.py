@@ -24,9 +24,9 @@ document_conversion = DocumentConversionV1(
 #         document=document, config=config, media_type='text/html').content)
 
 # Example with JSON
-with open(join(dirname(__file__), '../resources/thesis/sample.pdf'),
-          encoding='utf8') as document:
-    config = {'conversion_target': DocumentConversionV1.NORMALIZED_HTML}
+with open(join(dirname(__file__), '../resources/thesis/medical.pdf'),
+          'rb') as document:
+    config = {'conversion_target': DocumentConversionV1.NORMALIZED_TEXT}
     config['conversion_target'] = DocumentConversionV1.ANSWER_UNITS
     print(json.dumps(
         document_conversion.convert_document(document=document, config=config),

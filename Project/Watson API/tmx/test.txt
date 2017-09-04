@@ -1,0 +1,8 @@
+﻿
+기계학습의 한 분야인 딥러닝은 최근 다양한 분야에서 비약적인 성능 향상에 기여하였다.
+
+본 논문은 음악 장르분류 문제에 있어서 최초로 멀티모달 딥러닝 구조를 이용할 수 있는 모델을 제안한다.
+
+음악의 스펙트로그램 이미지에 대한 분석을 위해 CNN(Convolutional Neural Network)을 사용하였으며, 음원의 연속적인 데이터에 대해 RNN(Recurrent Neural Network)을 사용하였다.
+
+또한 대표적인 정규화(Regularization)기법인 dropout 을 적용하여 과적합(overfitting) 문제를 해결하였다.

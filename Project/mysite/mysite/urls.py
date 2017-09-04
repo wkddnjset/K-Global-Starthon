@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from testapp.views import home, get_name, pdf_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', home),
+    url(r'^name/$', get_name),
+    url(r'^pdf/$', pdf_view),
 ]
